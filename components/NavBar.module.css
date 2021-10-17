@@ -1,0 +1,24 @@
+.NavBar {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: aliceblue;
+}
+
+.NavBar-Brand {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.NavBar-Links {
+  margin-right: 1rem;
+}
+
+.NavBar-Links a {
+  margin: 0 1rem 0 0;
+}
