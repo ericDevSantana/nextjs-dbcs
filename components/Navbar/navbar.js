@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/dist/client/router";
 import styles from "../Navbar/Navbar.module.css";
 import Link from "next/link";
@@ -50,25 +50,25 @@ export default function NavBar(props) {
         {props.contact ? (
           <div className={styles["NavBar-Links-Contact"]}>
             <Link href="/">
-              <a>Back</a>
+              <a>BACK</a>
             </Link>
           </div>
         ) : windowDimensions.width > 1300 ? (
           <div className={styles["NavBar-Links"]}>
             <Link href="#home">
-              <a>Home</a>
+              <a>HOME</a>
             </Link>
             <Link href="#about">
-              <a>About</a>
+              <a>ABOUT</a>
             </Link>
             <Link href="#vehicles">
-              <a>Vehicles</a>
+              <a>VEHICLES</a>
             </Link>
             <Link href="#services">
-              <a>Services</a>
+              <a>SERVICES</a>
             </Link>
             <Link href="/contact">
-              <a>Contact</a>
+              <a>CONTACT</a>
             </Link>
           </div>
         ) : (
@@ -87,19 +87,19 @@ export default function NavBar(props) {
             className={styles["sandwich-menu-links"]}
           >
             <Link href="#home">
-              <a>Home</a>
+              <a>HOME</a>
             </Link>
             <Link href="#about">
-              <a>About</a>
+              <a>ABOUT</a>
             </Link>
             <Link href="#vehicles">
-              <a>Vehicles</a>
+              <a>VEHICLES</a>
             </Link>
             <Link href="#services">
-              <a>Services</a>
+              <a>SERVICES</a>
             </Link>
             <Link onClick={handleContactClick} href="/contact">
-              <a>Contact</a>
+              <a>CONTACT</a>
             </Link>
           </div>
         </div>

@@ -4,8 +4,8 @@
   position: fixed;
   top: 0;
   display: block;
-  background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
   z-index: 3;
 }
 
@@ -16,8 +16,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-  color: aliceblue;
+  color: white;
   z-index: 3;
 }
 
@@ -88,8 +87,7 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  background-color: black;
-  filter: opacity(95%);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .sandwich-menu-links {

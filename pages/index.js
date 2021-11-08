@@ -105,7 +105,13 @@ export default function Home() {
         }}
       >
         <Link href="#home">
-          <FontAwesomeIcon icon={faArrowAltCircleUp} size="2x" color="coral" />
+          <a>
+            <FontAwesomeIcon
+              icon={faArrowAltCircleUp}
+              size="2x"
+              color="coral"
+            />
+          </a>
         </Link>
         <p>BACK TO TOP</p>
       </div>
