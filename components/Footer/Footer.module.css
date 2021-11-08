@@ -1,0 +1,214 @@
+.Footer {
+  width: 100%;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: smaller;
+  z-index: 2;
+}
+
+.Footer h1 {
+  color: rgb(255, 255, 255);
+}
+
+.Footer a {
+  color: aliceblue;
+}
+
+.Footer p {
+  color: aliceblue;
+}
+
+.Footer-Info {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+}
+
+.Footer-Social-Media {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Footer-Social-Media h1 {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.Footer-Social-Media-Links {
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.Footer-Other {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+}
+
+.Footer-Other h1 {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.Footer-Other-Links {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Footer-Other-Links a {
+  width: 100%;
+  font-size: .75rem;
+}
+
+.Footer-Contact {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.Footer-Contact h1 {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.Footer-Contact-Item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.Footer-Contact-Item p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 0 20px;
+  font-size: 0.75rem;
+}
+
+.Footer-Message {
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.Footer-Message p {
+  margin: 0;
+  color: black;
+}
+
+@media (max-width: 1300px) {
+  .Footer-Info {
+    flex-direction: row;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .Footer-Social-Media,
+  .Footer-Other,
+  .Footer-Contact {
+    width: 100%;
+  }
+
+  .Footer-Social-Media {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .Footer-Social-Media h1 {
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+  }
+
+  .Footer-Social-Media-Links {
+    width: 60%;
+    justify-content: space-evenly;
+    margin: 1rem 0 0 0;
+  }
+
+  .Footer-Social-Media-Links i {
+    font-size: 0.75rem;
+  }
+
+  .Footer-Other {
+    display: none;
+  }
+
+  .Footer-Other-Links {
+    flex-direction: row;
+    width: 40%;
+  }
+
+  .Footer-Other-Links a {
+    font-size: 0.75rem;
+  }
+
+  .Footer-Contact {
+    padding: 0 0 1rem 0;
+    border-left: 1px solid lightblue;
+  }
+
+  .Footer-Contact h1 {
+    margin: 1rem 0 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .Footer-Contact-Item {
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0.15rem 0;
+  }
+
+  .Footer-Contact-Item p {
+    margin: 0 0 0 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 710px) {
+  .Footer-Contact-Item p {
+    font-size: .35rem;
+  }
+
+  .Footer-Contact-Item {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Footer-Contact-Item p {
+    margin: .3rem;
+    font-size: .5rem;
+  }
+
+  .Footer-Message {
+    font-size: .5rem;
+  }
+}

@@ -1,7 +1,645 @@
 .container {
-  height: 110vh;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 600px) {
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
+.backgroundImage {
+  background-image: url("../public/background.jpg");
+  height: 42rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+}
+
+.card {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  color: white;
+}
+
+.card h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 80%;
+  text-align: justify;
+}
+
+.card button {
+  border: none;
+  background-color: rgb(255, 94, 0);
+  border-radius: 15px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 35%;
+  margin-top: 1rem;
+  color: aliceblue;
+}
+
+.about {
+  position: relative;
+  height: 450px;
+  width: 100%;
+}
+
+.about-img {
+  background-image: url("../public/sanfrancisco.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  filter: brightness(70%);
+}
+
+.about-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  right: 0%;
+  top: 20%;
+  bottom: 20%;
+  color: aliceblue;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.about-text p {
+  width: 80%;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.vehicles {
+  height: 600px;
+  position: relative;
+}
+
+.vehicles-display {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicle-a-screen {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  z-index: 2;
+}
+
+.vehicle-a-screen:hover ~ .vehicle-item-a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+  width: 60%;
+}
+
+.vehicle-a-screen:hover ~ .vehicle-text {
+  display: none;
+}
+
+.vehicle-a-screen:hover ~ .vehicle-a-description {
+  display: flex;
+}
+
+.vehicle-item-a {
+  width: 100%;
+  height: 300px;
+  background-image: url("../public/s450.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1;
+  background-color: black;
+}
+
+.vehicle-a-description {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  right: 0%;
+  top: 5%;
+  width: 50%;
+  color: white;
+}
+
+.vehicle-a-description h1 {
+  font-size: 3rem;
+}
+
+.vehicle-b-screen {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0%;
+  z-index: 2;
+}
+
+.vehicle-b-screen:hover ~ .vehicle-item-b {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+  width: 60%;
+}
+
+.vehicle-b-screen:hover ~ .vehicle-text {
+  display: none;
+}
+
+.vehicle-b-screen:hover ~ .vehicle-b-description {
+  display: flex;
+}
+
+.vehicle-item-b {
+  width: 100%;
+  height: 300px;
+  background-image: url("../public/yukon.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: brightness(100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  z-index: 1;
+}
+
+.vehicle-b-description {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  right: 0%;
+  width: 50%;
+  top: 55%;
+  color: white;
+}
+
+.vehicle-b-description h1 {
+  font-size: 3rem;
+}
+
+.vehicle-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: 3%;
+  margin-top: 2%;
+  z-index: 3;
+}
+
+.vehicle-text h1 {
+  font-size: 4rem;
+  color: aliceblue;
+  margin: 0;
+}
+
+.services {
+  height: 35rem;
+  position: relative;
+}
+
+.services-display {
+  display: flex;
+  flex-direction: row;
+  height: 35rem;
+}
+
+.service-a-screen {
+  position: absolute;
+  height: 35rem;
+  width: 34%;
+  z-index: 2;
+}
+
+.service-a-screen:hover ~ .service-a {
+  height: 25rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.service-a {
+  width: 34%;
+  height: 35rem;
+  background-image: url("../public/airport.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  filter: brightness(100%);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  z-index: 1;
+}
+
+.service-a-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  height: 10rem;
+  bottom: 0%;
+  width: 34%;
+  background-color: black;
+  color: aliceblue;
+}
+
+.service-a-info h1 {
+  font-size: 2rem;
+}
+
+.service-a-info p {
+  margin-top: 0;
+}
+
+.service-b-screen {
+  position: absolute;
+  height: 35rem;
+  width: 32%;
+  margin-left: 34%;
+  z-index: 2;
+}
+
+.service-b-screen:hover ~ .service-b {
+  height: 25rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.service-b {
+  width: 32%;
+  height: 35rem;
+  background-image: url("../public/napa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-left: 34%;
+  filter: brightness(100%);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  z-index: 1;
+}
+
+.service-b-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  height: 10rem;
+  bottom: 0%;
+  width: 32%;
+  margin-left: 34%;
+  background-color: black;
+  color: aliceblue;
+}
+
+.service-b-info h1 {
+  font-size: 2rem;
+}
+
+.service-b-info p {
+  margin-top: 0;
+}
+
+.service-c-screen {
+  position: absolute;
+  height: 35rem;
+  width: 34%;
+  margin-left: 66%;
+  z-index: 2;
+}
+
+.service-c-screen:hover ~ .service-c {
+  height: 25rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.service-c-screen:hover ~ .service-text {
+  display: none;
+}
+
+.service-c {
+  width: 34%;
+  height: 35rem;
+  background-image: url("../public/pickup.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-left: 66%;
+  filter: brightness(100%);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  z-index: 1;
+}
+
+.service-c-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  height: 10rem;
+  bottom: 0%;
+  width: 34%;
+  margin-left: 66%;
+  background-color: black;
+  color: aliceblue;
+}
+
+.service-c-info h1 {
+  font-size: 2rem;
+}
+
+.service-c-info p {
+  margin-top: 0;
+}
+
+.service-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: 55%;
+  right: 5%;
+  margin-top: 2%;
+  z-index: 2;
+}
+
+.service-text h1 {
+  font-size: 4rem;
+  color: aliceblue;
+  margin: 0;
+}
+
+@media (max-width: 1300px) {
+  .backgroundImage {
+    height: 51rem;
+    filter: brightness(60%);
+  }
+
+  .card {
+    left: 0;
+    right: 0;
+  }
+
+  .card h1 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+    width: 80%;
+    font-weight: 400;
+  }
+
+  .card button {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .about {
+    margin-top: 2rem;
+  }
+
+  .about-img {
+    filter: brightness(60%);
+  }
+
+  .about-text {
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+  }
+
+  .about-text h1 {
+    font-size: 6rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-text p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .vehicles {
+    margin-top: 2rem;
+  }
+
+  .vehicles-display,
+  .vehicles {
+    height: 400px;
+    padding-top: 0rem;
+  }
+
+  .vehicle-item-a,
+  .vehicle-item-b {
+    height: 200px;
+    width: 50%;
+    filter: brightness(100%);
+  }
+
+  .vehicle-a-screen,
+  .vehicle-b-screen {
+    display: none;
+  }
+
+  .vehicle-a-description,
+  .vehicle-b-description {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .vehicle-a-description h1,
+  .vehicle-b-description h1 {
+    font-size: 1.25rem;
+    text-align: right;
+  }
+
+  .vehicle-a-description p,
+  .vehicle-b-description p {
+    font-size: 0.75rem;
+    width: 80%;
+    text-align: justify;
+    margin: 0;
+  }
+
+  .vehicle-text {
+    margin: 0;
+    margin-top: 1rem;
+    left: 5%;
+    display: none;
+  }
+
+  .service-text {
+    display: none;
+  }
+
+  .vehicle-text h1,
+  .service-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .services {
+    height: fit-content;
+  }
+
+  .services-display {
+    margin-top: 2rem;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .service-a,
+  .service-b,
+  .service-c {
+    width: 100%;
+    height: 10rem;
+    margin: 0;
+    filter: brightness(100%);
+    transition: none;
+    position: relative;
+  }
+
+  .service-a-screen,
+  .service-b-screen,
+  .service-c-screen {
+    display: none;
+  }
+
+  .service-a-info,
+  .service-b-info,
+  .service-c-info {
+    margin: 0;
+    height: 2rem;
+    width: 90%;
+    font-size: 2rem;
+    top: 0;
+    position: relative;
+  }
+
+  .service-a-info h1,
+  .service-b-info h1,
+  .service-c-info h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 710px) {
+  .backgroundImage {
+    height: 35rem;
+    filter: brightness(40%);
+  }
+
+  .card h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-img,
+  .about {
+    height: 17rem;
+  }
+
+  .about-text h1 {
+    font-size: 3rem;
+  }
+
+  .about-text p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 800;
+    width: 90%;
+  }
+
+  .vehicle-text h1 {
+    font-size: 3rem;
+  }
+
+  .vehicle-item-a, .vehicle-item-b {
+    width: 40%;
+  }
+
+  .vehicle-a-description, .vehicle-b-description {
+    width: 60%;
+  }
+
+  .vehicle-a-description h1,
+  .vehicle-b-description h1 {
+    font-size: 0.65rem;
+  }
+
+  .vehicle-a-description p,
+  .vehicle-b-description p {
+    width: 80%;
+    font-size: 0.45rem;
+    text-align: justify;
+  }
+
+  .vehicle-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .service-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .service-a-info h1,
+  .service-b-info h1,
+  .service-c-info h1 {
+    font-size: 0.75rem;
+  }
 }
