@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import NavBar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/footer";
@@ -104,9 +104,9 @@ export default function Home() {
           padding: "1rem 0 0 0",
         }}
       >
-        <a href="#home">
+        <Link href="#home">
           <FontAwesomeIcon icon={faArrowAltCircleUp} size="2x" color="coral" />
-        </a>
+        </Link>
         <p>BACK TO TOP</p>
       </div>
       <Footer />

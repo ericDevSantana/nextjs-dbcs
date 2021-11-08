@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/dist/client/router";
 import styles from "../Navbar/Navbar.module.css";
+import Link from "next/link";
 
 export default function NavBar(props) {
   const router = useRouter();
@@ -48,15 +49,27 @@ export default function NavBar(props) {
 
         {props.contact ? (
           <div className={styles["NavBar-Links-Contact"]}>
-            <a href="/">BACK</a>
+            <Link href="/">
+              <a>Back</a>
+            </Link>
           </div>
         ) : windowDimensions.width > 1300 ? (
           <div className={styles["NavBar-Links"]}>
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#vehicles">VEHICLES</a>
-            <a href="#services">SERVICES</a>
-            <a href="/contact">CONTACT</a>
+            <Link href="#home">
+              <a>Home</a>
+            </Link>
+            <Link href="#about">
+              <a>About</a>
+            </Link>
+            <Link href="#vehicles">
+              <a>Vehicles</a>
+            </Link>
+            <Link href="#services">
+              <a>Services</a>
+            </Link>
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
           </div>
         ) : (
           <div onClick={clickMenuHandle} className={styles["sandwich-menu"]}>
@@ -73,11 +86,21 @@ export default function NavBar(props) {
             onClick={clickMenuHandle}
             className={styles["sandwich-menu-links"]}
           >
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#vehicles">VEHICLES</a>
-            <a href="#services">SERVICES</a>
-            <a onClick={handleContactClick}>CONTACT</a>
+            <Link href="#home">
+              <a>Home</a>
+            </Link>
+            <Link href="#about">
+              <a>About</a>
+            </Link>
+            <Link href="#vehicles">
+              <a>Vehicles</a>
+            </Link>
+            <Link href="#services">
+              <a>Services</a>
+            </Link>
+            <Link onClick={handleContactClick} href="/contact">
+              <a>Contact</a>
+            </Link>
           </div>
         </div>
       ) : null}
