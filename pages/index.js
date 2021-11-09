@@ -4,7 +4,10 @@ import styles from "../styles/Home.module.css";
 import NavBar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowAltCircleUp,
+  faArrowUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -17,16 +20,18 @@ export default function Home() {
       <NavBar contact={false} />
       <div id="home" className={styles.body}>
         {/* -- BEGINNING INTRO BANNER -- */}
-        <div className={styles.backgroundImage}></div>
+        <div className={styles.backBanner}>
+          <div className={styles.backgroundImage}></div>
 
-        <div className={styles.card}>
-          <h1>DYNAMIC BLACK CAR SERVICE</h1>
-          <p>
-            We pride ourselves on a black car service that is luxurious yet
-            affordable. Our most popular service involves transporting clients
-            to and from SFO airport.
-          </p>
-          <button>REQUEST A QUOTE</button>
+          <div className={styles.card}>
+            <h1>DYNAMIC BLACK CAR SERVICE</h1>
+            <p>
+              We pride ourselves on a black car service that is luxurious yet
+              affordable. Our most popular service involves transporting clients
+              to and from SFO airport.
+            </p>
+            <button>REQUEST A QUOTE</button>
+          </div>
         </div>
         {/* -- ENDING INTRO BANNER -- */}
 
@@ -102,15 +107,12 @@ export default function Home() {
           backgroundColor: "black",
           textAlign: "center",
           padding: "1rem 0 0 0",
+          fontSize: "1rem",
         }}
       >
         <Link href="#home">
           <a>
-            <FontAwesomeIcon
-              icon={faArrowAltCircleUp}
-              size="2x"
-              color="coral"
-            />
+            <FontAwesomeIcon icon={faArrowUp} size="1x" />
           </a>
         </Link>
         <p>BACK TO TOP</p>

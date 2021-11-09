@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/dist/client/router";
 import styles from "../Navbar/Navbar.module.css";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavBar(props) {
   const router = useRouter();
@@ -50,7 +52,9 @@ export default function NavBar(props) {
         {props.contact ? (
           <div className={styles["NavBar-Links-Contact"]}>
             <Link href="/">
-              <a>BACK</a>
+              <a>
+                <FontAwesomeIcon icon={faArrowLeft} size="2x" />
+              </a>
             </Link>
           </div>
         ) : windowDimensions.width > 1300 ? (
@@ -73,9 +77,7 @@ export default function NavBar(props) {
           </div>
         ) : (
           <div onClick={clickMenuHandle} className={styles["sandwich-menu"]}>
-            <div></div>
-            <div></div>
-            <div></div>
+          <FontAwesomeIcon icon={faBars} size="2x" />
           </div>
         )}
       </div>

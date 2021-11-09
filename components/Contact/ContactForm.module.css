@@ -9,7 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(40%);
+  filter: brightness(100%) grayscale(0.5);
   width: 100%;
 }
 
@@ -27,11 +27,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: black;
+  background-color: aliceblue;
 }
 
 .contact-title h1 {
   font-size: 4rem;
-  margin: 40px;
+  font-weight: 600;
 }
 
 .contact-outer-form {
@@ -67,8 +69,8 @@
 }
 
 .contact-inner-form input {
-  border: none;
-  border-bottom: 1px solid lightgray;
+  /* border: none; */
+  border: 1px solid lightgray;
   font-size: 1rem;
   padding: 0.5rem;
 }
@@ -77,8 +79,8 @@
   font-family: inherit;
   font-size: 1rem;
   height: 100%;
-  border: none;
-  border-bottom: 1px solid lightgray;
+  /* border: none; */
+  border: 1px solid lightgray;
   padding: 0.5rem;
   resize: none;
 }
@@ -139,7 +141,6 @@
 
   .contact-background-image {
     height: 150vh;
-    filter: blur(5px) brightness(60%);
   }
 
   .contact-main {
@@ -164,6 +165,10 @@
     padding: 0;
   }
 
+  .contact-inner-form label {
+    font-size: 1rem;
+  }
+
   .contact-inner-button {
     width: 90%;
     margin: 0 auto 1rem auto;
@@ -186,7 +191,6 @@
 
   .contact-background-image {
     height: 150vh;
-    filter: blur(5px) brightness(60%);
   }
 
   .contact-title h1 {
