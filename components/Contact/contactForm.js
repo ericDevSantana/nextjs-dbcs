@@ -1,9 +1,39 @@
-import React from "react";
+import React, { useReducer, useState } from "react";
 import styles from "../Contact/ContactForm.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
+const initialState = {
+  name: "",
+  phone: "",
+  email: "",
+  message: "",
+};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "name":
+      return { ...state, name: action.payload };
+    case "phone":
+      return { ...state, phone: action.payload };
+    case "email":
+      return { ...state, email: action.payload };
+    case "message":
+      return { ...state, message: action.payload };
+    default:
+      throw new Error();
+  }
+}
+
+console.log(process.env.TEST_KEY);
+
 export default function ContactForm(props) {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  function handleInput(event) {
+    console.log(event.target.value);
+  }
+
   return (
     <div className={styles["contact-form"]}>
       <div className={styles["contact-background-image"]}></div>
@@ -16,18 +46,39 @@ export default function ContactForm(props) {
             <div className={styles["contact-inner-form"]}>
               <div className={styles["contact-field"]}>
                 <label>Name</label>
-                <input placeholder="Your name"></input>
+                <input
+                  onChange={(event) =>
+                    dispatch({ type: "name", payload: event.target.value })
+                  }
+                  placeholder="Your name"
+                ></input>
               </div>
               <div className={styles["contact-field"]}>
                 <label>Phone Number</label>
-                <input placeholder="Your phone number"></input>
+                <input
+                  onChange={(event) =>
+                    dispatch({ type: "phone", payload: event.target.value })
+                  }
+                  placeholder="Your phone number"
+                ></input>
               </div>
               <div className={styles["contact-field"]}>
                 <label>E-mail</label>
-                <input placeholder="Your e-mail"></input>
+                <input
+                  onChange={(event) =>
+                    dispatch({ type: "email", payload: event.target.value })
+                  }
+                  placeholder="Your e-mail"
+                ></input>
               </div>
               <label>Message</label>
-              <textarea rows="5" placeholder="Type your message..."></textarea>
+              <textarea
+                onChange={(event) =>
+                  dispatch({ type: "message", payload: event.target.value })
+                }
+                rows="5"
+                placeholder="Type your message..."
+              ></textarea>
             </div>
             <button className={styles["contact-inner-button"]}>SUBMIT</button>
           </div>
