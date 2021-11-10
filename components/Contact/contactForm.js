@@ -27,6 +27,12 @@ function reducer(state, action) {
 
 console.log(process.env.TEST_KEY);
 
+if (process.env.TEST_KEY === "123456789") {
+  console.log("I can access!");
+} else {
+  console.log("I can't access!");
+}
+
 export default function ContactForm(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
