@@ -27,21 +27,20 @@ function reducer(state, action) {
 
 export async function getStaticProps() {
   const my_key = process.env.TEST_KEY;
-  console.log(process.env.NEXT_PUBLIC_TEST_KEY);
 
-  if (process.env.TEST_KEY === "123456789") {
-    console.log("I can access!");
-  } else {
-    console.log("I can't access!");
+  if (my_key === "123456789") {
+    return {
+      props: {
+        my_key,
+      },
+    };
   }
 }
 
-export default function ContactForm(props) {
+export default function ContactForm({ my_key }) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  function handleInput(event) {
-    console.log(event.target.value);
-  }
+  console.log(my_key);
 
   return (
     <div className={styles["contact-form"]}>
