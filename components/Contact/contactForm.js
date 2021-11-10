@@ -25,12 +25,15 @@ function reducer(state, action) {
   }
 }
 
-console.log(process.env.TEST_KEY);
+export async function getStaticProps() {
+  const my_key = process.env.TEST_KEY;
+  console.log(process.env.NEXT_PUBLIC_TEST_KEY);
 
-if (process.env.TEST_KEY === "123456789") {
-  console.log("I can access!");
-} else {
-  console.log("I can't access!");
+  if (process.env.TEST_KEY === "123456789") {
+    console.log("I can access!");
+  } else {
+    console.log("I can't access!");
+  }
 }
 
 export default function ContactForm(props) {
