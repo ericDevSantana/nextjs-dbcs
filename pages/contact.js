@@ -4,6 +4,7 @@ import Footer from "../components/Footer/footer";
 import styles from "../styles/Contact.module.css";
 
 export default function Contact() {
+  console.log(process.env.TEST_KEY);
   return (
     <div>
       <NavBar contact={true} />
