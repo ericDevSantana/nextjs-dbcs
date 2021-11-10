@@ -47,7 +47,9 @@ export default function NavBar(props) {
   return (
     <div className={styles["NavBar"]}>
       <div className={styles["NavBar-main"]}>
-        <div className={styles["NavBar-Brand"]}>DYNAMIC BCS</div>
+        <Link href="/">
+          <div className={styles["NavBar-Brand"]}>DYNAMIC BCS</div>
+        </Link>
 
         {props.contact ? (
           <div className={styles["NavBar-Links-Contact"]}>
@@ -77,7 +79,7 @@ export default function NavBar(props) {
           </div>
         ) : (
           <div onClick={clickMenuHandle} className={styles["sandwich-menu"]}>
-          <FontAwesomeIcon icon={faBars} size="2x" />
+            <FontAwesomeIcon icon={faBars} size="2x" />
           </div>
         )}
       </div>

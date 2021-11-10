@@ -30,7 +30,9 @@ export default function Home() {
               affordable. Our most popular service involves transporting clients
               to and from SFO airport.
             </p>
-            <button>REQUEST A QUOTE</button>
+            <Link href="/contact">
+              <button>REQUEST A QUOTE</button>
+            </Link>
           </div>
         </div>
         {/* -- ENDING INTRO BANNER -- */}
@@ -88,7 +90,7 @@ export default function Home() {
             <div className={styles["service-b-screen"]}></div>
             <div className={styles["service-b"]}></div>
             <div className={styles["service-b-info"]}>
-              <h1>WINE COUNTY TOURS</h1>
+              <h1>WINE COUNTRY TOURS</h1>
             </div>
             <div className={styles["service-c-screen"]}></div>
             <div className={styles["service-c"]}></div>

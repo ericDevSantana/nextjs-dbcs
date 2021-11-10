@@ -14,15 +14,15 @@
 }
 
 .backgroundImage {
-  background-image: url("../public/auto-2178926_1920.jpg");
+  background-image: url("../public/image0.jpeg");
   /* clip-path: polygon(70% 0, 100% 0, 100% 100%, 30% 100%); */
   height: 42rem;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(90%);
-  -webkit-filter: brightness(90%);
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
 }
 
 .card {
@@ -61,6 +61,10 @@
   width: 35%;
   font-weight: 700;
   color: aliceblue;
+}
+
+.card button:hover {
+  cursor: pointer;
 }
 
 .about {
@@ -567,11 +571,11 @@
   .service-b-info,
   .service-c-info {
     margin: 0;
-    height: 2rem;
-    width: 90%;
+    height: fit-content;
+    width: 100%;
     font-size: 2rem;
-    top: 0;
     position: relative;
+    padding: 10px;
   }
 
   .service-a-info h1,
@@ -585,19 +589,21 @@
 @media (max-width: 710px) {
   .backgroundImage {
     height: 35rem;
-    filter: brightness(100%);
+    filter: brightness(80%);
     background-size: cover;
   }
 
   .card h1 {
     font-size: 3rem;
     text-align: center;
+    font-weight: 900;
   }
 
   .card p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
     width: 100%;
+    font-weight: 900;
   }
 
   .card button {
@@ -621,26 +627,24 @@
     width: 90%;
   }
 
-  .vehicle-a-description h1, .vehicle-b-description h1 {
+  .vehicle-a-description h1,
+  .vehicle-b-description h1 {
     text-align: center;
   }
 
-  .vehicle-a-description p, .vehicle-b-description p {
+  .vehicle-a-description p,
+  .vehicle-b-description p {
     width: 90%;
     text-align: justify;
   }
 
-  .vehicle-text h1 {
-    font-size: 3rem;
-  }
-
-  .service-text h1 {
-    font-size: 1.5rem;
+  .services-display {
+    height: fit-content;
   }
 
   .service-a-info h1,
   .service-b-info h1,
   .service-c-info h1 {
-    font-size: 0.75rem;
+    font-size: 2rem;
   }
 }
