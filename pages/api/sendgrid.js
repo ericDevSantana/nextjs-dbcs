@@ -8,7 +8,7 @@ async function sendEmail(req, res) {
       to: process.env.BUSINESS_EMAIL,
       from: process.env.BUSINESS_EMAIL,
       subject: `${req.body.subject}`,
-      html: `<div>You've got mail!</div>`,
+      html: `${req.body.message}`,
     });
   } catch (error) {
     return res.status(error.statusCode || 500).json({ error: error.mesage });
