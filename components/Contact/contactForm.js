@@ -27,20 +27,16 @@ function reducer(state, action) {
 
 export default function ContactForm() {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const [fullname, setFullname] = useState("Eric");
-  const [email, setEmail] = useState("example@example.com");
-  const [subject, setSubject] = useState("Inquiry");
-  const [message, setMessage] = useState("This is my message!");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const res = await fetch("/api/sendgrid", {
       body: JSON.stringify({
-        email: email,
-        fullname: fullname,
-        subject: subject,
-        message: message,
+        email: state.email,
+        fullname: state.name,
+        subject: "New Message From My Website",
+        message: state.message,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -53,7 +49,7 @@ export default function ContactForm() {
       console.log(error);
       return;
     }
-    console.log(fullname, email, subject, message);
+    // console.log(fullname, email, subject, message);
   };
 
   return (
