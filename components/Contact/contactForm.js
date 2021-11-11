@@ -28,6 +28,30 @@ function reducer(state, action) {
 export default function ContactForm() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const res = await fetch("/api/sendgrid", {
+      body: JSON.stringify({
+        email: initialState.email,
+        fullname: initialState.name,
+        subject: "Inquiry",
+        message: initialState.message,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      console.log(error);
+      return;
+    }
+    console.log(fullname, email, subject, message);
+  };
+
   return (
     <div className={styles["contact-form"]}>
       <div className={styles["contact-background-image"]}></div>
@@ -74,7 +98,12 @@ export default function ContactForm() {
                 placeholder="Type your message..."
               ></textarea>
             </div>
-            <button className={styles["contact-inner-button"]}>SUBMIT</button>
+            <button
+              onClick={handleSubmit}
+              className={styles["contact-inner-button"]}
+            >
+              SUBMIT
+            </button>
           </div>
           <div className={styles["contact-info"]}>
             <h1>Any questions?</h1>

@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   env: {
-    TEST_KEY: process.env.TEST_KEY,
+    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
   },
 };
