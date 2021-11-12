@@ -35,7 +35,8 @@ export default function ContactForm() {
       body: JSON.stringify({
         email: state.email,
         fullname: state.name,
-        subject: "New Message From My Website",
+        phone: state.phone,
+        subject: "New Message From Dynamic Black Car Service Website",
         message: state.message,
       }),
       headers: {
