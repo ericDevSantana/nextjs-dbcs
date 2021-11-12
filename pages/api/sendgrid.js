@@ -36,7 +36,7 @@ async function sendEmail(req, res) {
               <p>${req.body.message}</p>
               <br>
               </div>
-              <img src={${pic}} class="logo-image" style="height: 50px;width: 100px;border-radius: 5px;overflow: hidden;">
+              <img src="https://nextjs-dbcs.vercel.app/card.jpeg" class="logo-image" style="height: 50px;width: 100px;border-radius: 5px;overflow: hidden;">
               <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">
               Regards<br>Silvio Botelho<br>Owner and CEO<br>+1(415) 767-6551</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
