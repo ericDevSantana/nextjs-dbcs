@@ -199,7 +199,6 @@
   }
 
   .Footer-Contact-Item {
-    flex-direction: column;
     width: 100%;
   }
 
@@ -214,5 +213,9 @@
 
   .Footer-Social-Media-Links i {
     font-size: 8px;
+  }
+
+  .Footer-Info h1 {
+    margin: 0 0 10px 0;
   }
 }

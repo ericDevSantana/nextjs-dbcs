@@ -37,10 +37,10 @@ async function sendEmail(req, res) {
               <br>
               </div>
               <img src={${pic}} class="logo-image" style="height: 50px;width: 100px;border-radius: 5px;overflow: hidden;">
-              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Silvio Botelho<br>Owner and CEO<br>+1(415) 767-6551</p>
+              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">
+              Regards<br>Silvio Botelho<br>Owner and CEO<br>+1(415) 767-6551</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://nextjs-dbcs.vercel.app/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Website</a>
-                <a href="https://manuarora.in/blog/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Blog</a>
                 <a href="https://instagram.com/maninthere/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
                 <a href="https://twitter.com/mannupaaji/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
                 

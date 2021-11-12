@@ -36,7 +36,7 @@ export default function ContactForm() {
         email: state.email,
         fullname: state.name,
         phone: state.phone,
-        subject: "New Message From Dynamic Black Car Service Website",
+        subject: "Dynamic Black Car Service Website",
         message: state.message,
       }),
       headers: {

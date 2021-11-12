@@ -24,6 +24,7 @@ export default function Home() {
           <div className={styles.backgroundImage}></div>
 
           <div className={styles.card}>
+          {/* <img src="/brandBanner.jpg"></img> */}
             <h1>DYNAMIC BLACK CAR SERVICE</h1>
             <p>
               We pride ourselves on a black car service that is luxurious yet
@@ -103,6 +104,7 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <img src="/card.jpeg"></img>
       <div
         style={{
           color: "white",
