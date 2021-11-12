@@ -27,7 +27,7 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new message!</h3>
+              <h2>You've got a new message!</h2>
               <div style="font-size: 16px;">
               <p>Name: ${req.body.fullname}.</p>
               <p>E-mail: ${req.body.email}.</p>
@@ -36,9 +36,9 @@ async function sendEmail(req, res) {
               <p>${req.body.message}</p>
               <br>
               </div>
-              <img src="https://nextjs-dbcs.vercel.app/card.jpeg" class="logo-image" style="height: 50px;width: 100px;border-radius: 5px;overflow: hidden;">
+              <img src="https://nextjs-dbcs.vercel.app/card.jpeg" class="logo-image" style="height: 100px;width: 150px;border-radius: 5px;overflow: hidden;">
               <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">
-              Regards<br>Silvio Botelho<br>Owner and CEO<br>+1(415) 767-6551</p>
+              <br>Silvio Botelho<br>Owner and CEO<br>+1(415) 767-6551</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://nextjs-dbcs.vercel.app/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Website</a>
                 <a href="https://instagram.com/maninthere/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
