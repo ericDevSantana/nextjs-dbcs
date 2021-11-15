@@ -14,6 +14,13 @@ export default function Home() {
         <meta name="description" content="Arrive on time and in style." />
         <link rel="icon" href="/favicon.ico" />
         <meta
+          property="og:description"
+          content="Arrive on time and in style."
+        />
+        <meta property="og:title" content="Dynamic Black Car Service" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nextjs-dbcs.vercel.app/" />
+        <meta
           property="og:image"
           content="http://nextjs-dbcs.vercel.app/card.jpeg"
         />
