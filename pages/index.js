@@ -4,10 +4,7 @@ import styles from "../styles/Home.module.css";
 import NavBar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowAltCircleUp,
-  faArrowUp,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -16,6 +13,15 @@ export default function Home() {
         <title>Dynamic Black Car Service</title>
         <meta name="description" content="Arrive on time and in style." />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content="/icon-192x192.png" />
+        <meta
+          property="og:image:secure_url"
+          content="https://nextjs-dbcs.vercel.app/"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="192" />
+        <meta property="og:image:height" content="192" />
+        <meta property="og:image:alt" content="Letter B." />
       </Head>
       <NavBar contact={false} />
       <div id="home" className={styles.body}>
@@ -24,7 +30,7 @@ export default function Home() {
           <div className={styles.backgroundImage}></div>
 
           <div className={styles.card}>
-          {/* <img src="/brandBanner.jpg"></img> */}
+            {/* <img src="/brandBanner.jpg"></img> */}
             <h1>DYNAMIC BLACK CAR SERVICE</h1>
             <p>
               We pride ourselves on a black car service that is luxurious yet
