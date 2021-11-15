@@ -36,6 +36,18 @@
   font-weight: 600;
 }
 
+.contact-feedback {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 241, 241);
+  color: black;
+  width: 100%;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
 .contact-outer-form {
   display: flex;
   flex-direction: row;

@@ -30,7 +30,7 @@ async function sendEmail(req, res) {
               <h2>You've got a new message!</h2>
               <div style="font-size: 16px;">
               <p>Name: ${req.body.fullname}.</p>
-              <p>E-mail: ${req.body.email}.</p>
+              <p>E-mail: ${req.body.email}</p>
               <p>Phone Number: ${req.body.phone}</p>
               <p>Message:</p>
               <p>${req.body.message}</p>

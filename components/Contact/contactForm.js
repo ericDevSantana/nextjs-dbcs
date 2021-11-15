@@ -1,7 +1,9 @@
-import React, { useReducer, useState } from "react";
+import React, { useReducer, useRef, useState } from "react";
 import styles from "../Contact/ContactForm.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import validator from "email-validator";
+import ContactFeedback from "./contactFeedback";
 
 const initialState = {
   name: "",
@@ -20,6 +22,8 @@ function reducer(state, action) {
       return { ...state, email: action.payload };
     case "message":
       return { ...state, message: action.payload };
+    case "reset":
+      return { name: "", phone: "", email: "", message: "" };
     default:
       throw new Error();
   }
@@ -27,30 +31,63 @@ function reducer(state, action) {
 
 export default function ContactForm() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [messageSent, setMessageSent] = useState(false);
+  const nameRef = useRef(null);
+  const phoneRef = useRef(null);
+  const emailRef = useRef(null);
+  const messageRef = useRef(null);
+
+  const validateContactInput = (state) => {
+    if (state.name && state.phone && state.message.trim() !== "") {
+      if (validator.validate(state.email.trim())) {
+        // console.log("Message sent!");
+        emailRef.current.style.color = "black";
+        nameRef.current.style.color = "black";
+        phoneRef.current.style.color = "black";
+        messageRef.current.style.color = "black";
+        return true;
+      } else {
+        messageRef.current.style.color = "black";
+        emailRef.current.style.color = "red";
+        return false;
+      }
+    } else {
+      // console.log("Fill up the form.");
+      if (state.name === "") nameRef.current.style.color = "red";
+      if (state.phone === "") phoneRef.current.style.color = "red";
+      if (state.message.trim() === "") messageRef.current.style.color = "red";
+      return false;
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (validateContactInput(state)) {
+      const res = await fetch("/api/sendgrid", {
+        body: JSON.stringify({
+          email: state.email,
+          fullname: state.name,
+          phone: state.phone,
+          subject: "Dynamic Black Car Service Website",
+          message: state.message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
 
-    const res = await fetch("/api/sendgrid", {
-      body: JSON.stringify({
-        email: state.email,
-        fullname: state.name,
-        phone: state.phone,
-        subject: "Dynamic Black Car Service Website",
-        message: state.message,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-    });
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        return;
+      }
 
-    const { error } = await res.json();
-    if (error) {
-      console.log(error);
-      return;
+      dispatch({ type: "reset" });
+      setMessageSent(true);
+    } else {
+      // console.log("Message Not Sent!");
     }
-    // console.log(fullname, email, subject, message);
   };
 
   return (
@@ -60,64 +97,74 @@ export default function ContactForm() {
         <div className={styles["contact-title"]}>
           <h1>CONTACT US</h1>
         </div>
-        <div className={styles["contact-outer-form"]}>
-          <div className={styles["contact-full-form"]}>
-            <div className={styles["contact-inner-form"]}>
-              <div className={styles["contact-field"]}>
-                <label>Name</label>
-                <input
+        <form>
+          <div className={styles["contact-outer-form"]}>
+            {messageSent ? <ContactFeedback onClick={setMessageSent} /> : null}
+            <div className={styles["contact-full-form"]}>
+              <div className={styles["contact-inner-form"]}>
+                <div className={styles["contact-field"]}>
+                  <label ref={nameRef}>Name*</label>
+                  <input
+                    onChange={(event) => {
+                      dispatch({ type: "name", payload: event.target.value });
+                      nameRef.current.style.color = "black";
+                    }}
+                    placeholder="Your name"
+                    value={state.name}
+                  ></input>
+                </div>
+                <div className={styles["contact-field"]}>
+                  <label ref={phoneRef}>Phone Number*</label>
+                  <input
+                    onChange={(event) => {
+                      dispatch({ type: "phone", payload: event.target.value });
+                      phoneRef.current.style.color = "black";
+                    }}
+                    placeholder="Your phone number"
+                    value={state.phone}
+                  ></input>
+                </div>
+                <div className={styles["contact-field"]}>
+                  <label ref={emailRef}>E-mail*</label>
+                  <input
+                    onChange={(event) => {
+                      dispatch({ type: "email", payload: event.target.value });
+                      emailRef.current.style.color = "black";
+                    }}
+                    placeholder="Your e-mail"
+                    value={state.email}
+                  ></input>
+                </div>
+                <label ref={messageRef}>Message*</label>
+                <textarea
                   onChange={(event) =>
-                    dispatch({ type: "name", payload: event.target.value })
+                    dispatch({ type: "message", payload: event.target.value })
                   }
-                  placeholder="Your name"
-                ></input>
+                  rows="5"
+                  placeholder="Type your message..."
+                  value={state.message}
+                ></textarea>
               </div>
-              <div className={styles["contact-field"]}>
-                <label>Phone Number</label>
-                <input
-                  onChange={(event) =>
-                    dispatch({ type: "phone", payload: event.target.value })
-                  }
-                  placeholder="Your phone number"
-                ></input>
-              </div>
-              <div className={styles["contact-field"]}>
-                <label>E-mail</label>
-                <input
-                  onChange={(event) =>
-                    dispatch({ type: "email", payload: event.target.value })
-                  }
-                  placeholder="Your e-mail"
-                ></input>
-              </div>
-              <label>Message</label>
-              <textarea
-                onChange={(event) =>
-                  dispatch({ type: "message", payload: event.target.value })
-                }
-                rows="5"
-                placeholder="Type your message..."
-              ></textarea>
+              <button
+                onClick={handleSubmit}
+                className={styles["contact-inner-button"]}
+              >
+                SUBMIT
+              </button>
             </div>
-            <button
-              onClick={handleSubmit}
-              className={styles["contact-inner-button"]}
-            >
-              SUBMIT
-            </button>
+            <div className={styles["contact-info"]}>
+              <h1>Any questions?</h1>
+              <div className={styles["contact-info-item"]}>
+                <FontAwesomeIcon icon={faEnvelope} size="2x" color="coral" />
+                <p>DYNAMICBLACKCAR@GMAIL.COM</p>
+              </div>
+              <div className={styles["contact-info-item"]}>
+                <FontAwesomeIcon icon={faPhone} size="2x" color="coral" />
+                <p>1+ (415) 767-6551</p>
+              </div>
+            </div>
           </div>
-          <div className={styles["contact-info"]}>
-            <h1>Any questions?</h1>
-            <div className={styles["contact-info-item"]}>
-              <FontAwesomeIcon icon={faEnvelope} size="2x" color="coral" />
-              <p>DYNAMICBLACKCAR@GMAIL.COM</p>
-            </div>
-            <div className={styles["contact-info-item"]}>
-              <FontAwesomeIcon icon={faPhone} size="2x" color="coral" />
-              <p>1+ (415) 767-6551</p>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   );
