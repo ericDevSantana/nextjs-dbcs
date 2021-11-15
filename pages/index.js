@@ -15,9 +15,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:image"
-          content="https://images.freeimages.com/images/large-prFeviews/3d1/car-and-boat-1563752.jpg"
+          content="http://images.freeimages.com/images/large-prFeviews/3d1/car-and-boat-1563752.jpg"
         />
-        <meta property="og:type" content="website" />
+        <meta
+          property="og:image:secure_url"
+          content="https://secure.images.freeimages.com/images/large-prFeviews/3d1/car-and-boat-1563752.jpg"
+        />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
       </Head>
       <NavBar contact={false} />
       <div id="home" className={styles.body}>
