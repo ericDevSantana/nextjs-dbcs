@@ -15,11 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:image"
-          content="http://images.freeimages.com/images/large-prFeviews/3d1/car-and-boat-1563752.jpg"
+          content="http://nextjs-dbcs.vercel.app/card.jpeg"
         />
         <meta
           property="og:image:secure_url"
-          content="https://secure.images.freeimages.com/images/large-prFeviews/3d1/car-and-boat-1563752.jpg"
+          content="https://secure.nextjs-dbcs.vercel.app/card.jpeg"
         />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="400" />
