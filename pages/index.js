@@ -22,6 +22,8 @@ export default function Home() {
           property="og:image"
           content="https://nextjs-dbcs.vercel.app/card.jpeg"
         />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="250" />
         <meta property="og:type" content="website" />
       </Head>
       <NavBar contact={false} />
