@@ -14,14 +14,16 @@ export default function Home() {
         <meta name="description" content="Arrive on time and in style." />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="Dynamic Black Car Service" />
-        <meta
-          property="og:description"
-          content="Arrive on time and in style"
-        />
+        <meta property="og:description" content="Arrive on time and in style" />
         <meta
           property="og:image"
           content="https://images.freeimages.com/images/large-previews/3d1/car-and-boat-1563752.jpg"
         />
+        <meta
+          property="og:image:secure_url"
+          content="https://secure.images.freeimages.com/images/large-previews/3d1/car-and-boat-1563752.jpg"
+        />
+        <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="200" />
         <meta property="og:type" content="website" />
