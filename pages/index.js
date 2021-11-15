@@ -11,7 +11,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Dynamic Black Car Service</title>
-        <meta name="description" content="Arrive on time and in style." />
+        <meta name="description" content="Arrive on time and in style" />
         <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:image"
@@ -19,10 +19,10 @@ export default function Home() {
         />
         <meta
           property="og:image:secure_url"
-          content="https://secure.nextjs-dbcs.vercel.app/card.jpeg"
+          content="https://nextjs-dbcs.vercel.app/card.jpeg"
         />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="400" />
+        <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
       </Head>
       <NavBar contact={false} />
