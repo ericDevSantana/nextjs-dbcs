@@ -16,11 +16,8 @@ export default function Home() {
         <meta
           property="og:image"
           itemProp="image"
-          content="http://nextjs-dbcs.vercel.app/card.jpeg"
+          content="https://nextjs-dbcs.vercel.app/icon-192x192.png"
         />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="150" />
-        <meta property="og:image:height" content="100" />
       </Head>
       <NavBar contact={false} />
       <div id="home" className={styles.body}>
