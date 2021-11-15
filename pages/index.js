@@ -13,15 +13,10 @@ export default function Home() {
         <title>Dynamic Black Car Service</title>
         <meta name="description" content="Arrive on time and in style." />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content="/icon-192x192.png" />
-        <meta
-          property="og:image:secure_url"
-          content="https://nextjs-dbcs.vercel.app/"
-        />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="192" />
-        <meta property="og:image:height" content="192" />
-        <meta property="og:image:alt" content="Letter B." />
+        <meta property="og:title" content="Dynamic Black Car Service" />
+        <meta property="og:description" content="Arrive on time and in style." />
+        <meta property="og:image" itemprop="image" content="/icon-192x192.png" />
+        <meta property="og:type" content="website" />
       </Head>
       <NavBar contact={false} />
       <div id="home" className={styles.body}>
