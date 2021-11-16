@@ -22,10 +22,10 @@ export default function Home() {
         <meta property="og:url" content="https://nextjs-dbcs.vercel.app/" />
         <meta
           property="og:image"
-          content="http://nextjs-dbcs.vercel.app/card.jpeg"
+          content="http://nextjs-dbcs.vercel.app/icon-192x192.png"
         />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="200" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="200" />
       </Head>
       <NavBar contact={false} />
