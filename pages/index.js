@@ -24,9 +24,6 @@ export default function Home() {
           property="og:image"
           content="https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png"
         />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="200" />
-        <meta property="og:image:height" content="200" />
       </Head>
       <NavBar contact={false} />
       <div id="home" className={styles.body}>
