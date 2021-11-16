@@ -22,7 +22,7 @@ export default function Home() {
         <meta property="og:url" content="https://nextjs-dbcs.vercel.app/" />
         <meta
           property="og:image"
-          content="https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png"
+          content="https://nextjs-dbcs.vercel.app/napa.jpg"
         />
       </Head>
       <NavBar contact={false} />
