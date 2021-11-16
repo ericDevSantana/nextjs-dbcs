@@ -24,6 +24,8 @@ export default function Home() {
           property="og:image"
           content="https://nextjs-dbcs.vercel.app/napa.jpg"
         />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
       </Head>
       <NavBar contact={false} />
       <div id="home" className={styles.body}>
