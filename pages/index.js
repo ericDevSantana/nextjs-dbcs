@@ -22,7 +22,7 @@ export default function Home() {
         <meta property="og:url" content="https://nextjs-dbcs.vercel.app/" />
         <meta
           property="og:image"
-          content="https://www.7carservice.com/uploads/7/3/1/2/73129967/suv71.jpg"
+          content="https://nextjs-dbcs.vercel.app/napa.jpg"
         />
       </Head>
       <NavBar contact={false} />
