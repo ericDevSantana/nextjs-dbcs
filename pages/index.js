@@ -25,7 +25,7 @@ export default function Home() {
           content="http://nextjs-dbcs.vercel.app/icon-192x192.png"
         />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="300" />
+        <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="300" />
       </Head>
       <NavBar contact={false} />
