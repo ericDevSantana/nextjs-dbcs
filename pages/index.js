@@ -22,7 +22,7 @@ export default function Home() {
         <meta property="og:url" content="https://nextjs-dbcs.vercel.app/" />
         <meta
           property="og:image"
-          content="http://nextjs-dbcs.vercel.app/icon-192x192.png"
+          content="https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png"
         />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="200" />
