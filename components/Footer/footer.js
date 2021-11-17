@@ -1,4 +1,5 @@
 import styles from "../Footer/Footer.module.css";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -14,23 +15,45 @@ export default function Footer() {
         <div className={styles["Footer-Social-Media"]}>
           <h1>Follow Us</h1>
           <div className={styles["Footer-Social-Media-Links"]}>
-            <i>
-              <FontAwesomeIcon icon={faTwitter} size="2x" color="deepskyblue" />
-            </i>
-            <i>
+            <Link href="#home">
+              <a>
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  size="2x"
+                  color="deepskyblue"
+                />
+              </a>
+            </Link>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/dynamicblackcar/"
+            >
               <FontAwesomeIcon icon={faInstagram} size="2x" color="purple" />
-            </i>
-            <i>
-              <FontAwesomeIcon icon={faFacebook} size="2x" color="royalblue" />
-            </i>{" "}
+            </a>
+
+            <Link href="#home">
+              <a>
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  size="2x"
+                  color="royalblue"
+                />
+              </a>
+            </Link>
           </div>
         </div>
         <div className={styles["Footer-Other"]}>
           <h1>Resources</h1>
           <div className={styles["Footer-Other-Links"]}>
-            <a>LINK 1</a>
-            <a>LINK 2</a>
-            <a>LINK 3</a>
+            <Link href="#home">
+              <a>HOME</a>
+            </Link>
+            <Link href="#home">
+              <a>HOME</a>
+            </Link>
+            <Link href="#home">
+              <a>HOME</a>
+            </Link>
           </div>
         </div>
         <div className={styles["Footer-Contact"]}>

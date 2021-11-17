@@ -151,8 +151,9 @@
     margin: 1rem 0 0 0;
   }
 
-  .Footer-Social-Media-Links i {
-    font-size: 0.75rem;
+  .Footer-Social-Media-Links:hover {
+    cursor: pointer;
+    color: aquamarine;
   }
 
   .Footer-Other {
@@ -166,6 +167,10 @@
 
   .Footer-Other-Links a {
     font-size: 0.75rem;
+  }
+
+  .Footer-Other-Links a:hover {
+    cursor: pointer;
   }
 
   .Footer-Contact {
