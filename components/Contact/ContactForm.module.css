@@ -123,6 +123,10 @@
   color: aliceblue;
 }
 
+.contact-inner-button:hover {
+  cursor: pointer;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;

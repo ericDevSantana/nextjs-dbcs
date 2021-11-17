@@ -72,12 +72,17 @@
   height: 50%;
   width: 100%;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .Footer-Other-Links a {
-  width: 100%;
+  width: fit-content;
   font-size: 0.75rem;
+}
+
+.Footer-Other-Links a:hover{
+  cursor: pointer;
 }
 
 .Footer-Contact {
@@ -101,7 +106,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .Footer-Contact-Item p {
@@ -142,7 +147,7 @@
 
   .Footer-Social-Media h1 {
     margin: 1rem 0 0 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .Footer-Social-Media-Links {
@@ -153,7 +158,6 @@
 
   .Footer-Social-Media-Links:hover {
     cursor: pointer;
-    color: aquamarine;
   }
 
   .Footer-Other {
@@ -175,12 +179,12 @@
 
   .Footer-Contact {
     padding: 0 0 1rem 0;
-    border-left: 1px solid lightblue;
+    border-left: 1px solid gray;
   }
 
   .Footer-Contact h1 {
     margin: 1rem 0 1rem 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -189,38 +193,60 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0.15rem 0;
+    margin: 0 0 0.45rem 0;
   }
 
   .Footer-Contact-Item p {
     margin: 0 0 0 0.5rem;
-    font-size: 1rem;
+    font-size: .75rem;
   }
 }
 
 @media (max-width: 710px) {
+  .Footer {
+    border-top: 1px solid gray;
+  }
+
   .Footer-Contact-Item p {
     font-size: 0.35rem;
   }
 
   .Footer-Contact-Item {
     width: 100%;
+    padding: 0.5rem;
+    margin: 0;
   }
 
   .Footer-Contact-Item p {
     margin: 0.3rem;
-    font-size: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .Footer-Contact-Item {
+    flex-direction: column;
   }
 
   .Footer-Message {
     font-size: 0.5rem;
   }
 
-  .Footer-Social-Media-Links i {
-    font-size: 8px;
+  .Footer-Info {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .Footer-Contact {
+    border: none;
+    margin-top: 2rem;
+  }
+
+  .Footer-Social-Media-Links {
+    margin: 10px 0 10px 0;
+    font-size: 0.75rem;
   }
 
   .Footer-Info h1 {
     margin: 0 0 10px 0;
+    font-size: 1.5rem;
   }
 }

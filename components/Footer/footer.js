@@ -13,17 +13,15 @@ export default function Footer() {
     <div className={styles["Footer"]}>
       <div className={styles["Footer-Info"]}>
         <div className={styles["Footer-Social-Media"]}>
-          <h1>Follow Us</h1>
+          <h1>FOLLOW US</h1>
           <div className={styles["Footer-Social-Media-Links"]}>
-            <Link href="#home">
-              <a>
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  size="2x"
-                  color="deepskyblue"
-                />
-              </a>
-            </Link>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/dynamicblackcar"
+            >
+              <FontAwesomeIcon icon={faTwitter} size="2x" color="deepskyblue" />
+            </a>
             <a
               target="_blank"
               rel="noreferrer"
@@ -31,41 +29,35 @@ export default function Footer() {
             >
               <FontAwesomeIcon icon={faInstagram} size="2x" color="purple" />
             </a>
-
-            <Link href="#home">
-              <a>
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  size="2x"
-                  color="royalblue"
-                />
-              </a>
-            </Link>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/Dynamic-Black-Car-Service-109570161518782/"
+            >
+              <FontAwesomeIcon icon={faFacebook} size="2x" color="royalblue" />
+            </a>
           </div>
         </div>
         <div className={styles["Footer-Other"]}>
-          <h1>Resources</h1>
+          <h1>RESOURCES</h1>
           <div className={styles["Footer-Other-Links"]}>
-            <Link href="#home">
-              <a>HOME</a>
+            <Link href="#vehicles">
+              <a>VEHICLES</a>
             </Link>
-            <Link href="#home">
-              <a>HOME</a>
-            </Link>
-            <Link href="#home">
-              <a>HOME</a>
+            <Link href="#services">
+              <a>SERVICES</a>
             </Link>
           </div>
         </div>
         <div className={styles["Footer-Contact"]}>
-          <h1>Contact Us</h1>
-          <div className={styles["Footer-Contact-Item"]}>
-            <FontAwesomeIcon icon={faEnvelope} size="1x" color="coral" />
-            <p>DYNAMICBLACKCAR@GMAIL.COM</p>
-          </div>
+          <h1>CONTACT US</h1>
           <div className={styles["Footer-Contact-Item"]}>
             <FontAwesomeIcon icon={faPhone} size="1x" color="coral" />
             <p>1+ (415) 767-6551</p>
+          </div>
+          <div className={styles["Footer-Contact-Item"]}>
+            <FontAwesomeIcon icon={faEnvelope} size="1x" color="coral" />
+            <p>DYNAMICBLACKCAR@GMAIL.COM</p>
           </div>
         </div>
       </div>
