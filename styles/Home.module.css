@@ -115,7 +115,8 @@
   background: linear-gradient(
     270deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.6) 35%,
+    rgba(0, 0, 0, 0.3) 60%,
     rgba(198, 198, 198, 0) 100%
   );
 }
@@ -131,6 +132,7 @@
   text-align: justify;
   font-size: 1.5rem;
   margin-top: 0;
+  font-weight: 900;
 }
 
 .vehicles {
@@ -572,7 +574,7 @@
   .vehicle-b-description p {
     font-size: 1rem;
     width: 70%;
-    text-align: left;
+    text-align: center;
     margin: 0;
   }
 
