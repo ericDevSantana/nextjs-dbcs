@@ -79,9 +79,10 @@
 .Footer-Other-Links a {
   width: fit-content;
   font-size: 0.75rem;
+  margin-bottom: 10px;
 }
 
-.Footer-Other-Links a:hover{
+.Footer-Other-Links a:hover {
   cursor: pointer;
 }
 
@@ -160,13 +161,14 @@
     cursor: pointer;
   }
 
-  .Footer-Other {
-    display: none;
+  .Footer-Other h1 {
+    margin: 1rem 0 0 0;
   }
 
   .Footer-Other-Links {
-    flex-direction: row;
+    flex-direction: column;
     width: 40%;
+    justify-content: center;
   }
 
   .Footer-Other-Links a {
@@ -198,13 +200,17 @@
 
   .Footer-Contact-Item p {
     margin: 0 0 0 0.5rem;
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 710px) {
   .Footer {
     border-top: 1px solid gray;
+  }
+
+  .Footer-Info {
+    flex-direction: column;
   }
 
   .Footer-Contact-Item p {
@@ -219,29 +225,23 @@
 
   .Footer-Contact-Item p {
     margin: 0.3rem;
-    font-size: 0.75rem;
+    font-size: 0.55rem;
   }
-
-  .Footer-Contact-Item {
-    flex-direction: column;
-  }
-
   .Footer-Message {
     font-size: 0.5rem;
   }
 
-  .Footer-Info {
-    flex-direction: column;
-    padding: 2rem;
-  }
-
   .Footer-Contact {
     border: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
+  }
+
+  .Footer-Other {
+    margin-top: 1rem;
   }
 
   .Footer-Social-Media-Links {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 20px 0;
     font-size: 0.75rem;
   }
 

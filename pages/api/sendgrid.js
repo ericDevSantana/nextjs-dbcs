@@ -41,9 +41,9 @@ async function sendEmail(req, res) {
               <br>Silvio Botelho<br>Owner<br>+1(415) 767-6551</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://nextjs-dbcs.vercel.app/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Website</a>
-                <a href="https://instagram.com/maninthere/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
-                <a href="https://twitter.com/mannupaaji/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
-                
+                <a href="https://www.instagram.com/dynamicblackcar/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
+                <a href="https://twitter.com/dynamicblackcar" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
+                <a href="https://www.facebook.com/Dynamic-Black-Car-Service-109570161518782/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Facebook</a>
               </div>
               </div>
       </body>

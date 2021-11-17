@@ -38,8 +38,7 @@ export default function Home() {
             <h1>DYNAMIC BLACK CAR SERVICE</h1>
             <p>
               We pride ourselves on a black car service that is luxurious yet
-              affordable. Our most popular service involves transporting clients
-              to and from SFO airport.
+              affordable.
             </p>
             <Link href="/contact">
               <button>REQUEST A QUOTE</button>
@@ -53,10 +52,9 @@ export default function Home() {
           <div className={styles["about-text"]}>
             <h1>ABOUT US</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              We pride ourselves on a black car service that is luxurious yet
+              affordable. Our most popular service involves transporting clients
+              to and from SFO airport.
             </p>
           </div>
         </section>
@@ -67,23 +65,19 @@ export default function Home() {
             <div className={styles["vehicle-item-a"]}></div>
             <div className={styles["vehicle-a-description"]}>
               <h1>LUXURY SEDANS</h1>
-              <p>
-                Pellentesque nec euismod ex. Nunc faucibus nulla et felis tempus
-                egestas. Pellentesque nec euismod ex. Nunc faucibus nulla et
-                felis tempus egestas. Pellentesque nec euismod ex. Nunc faucibus
-                nulla et felis tempus egestas. sPellentesque nec euismod ex.
-              </p>
+              <p>Spacious sedans with generous room for legs.</p>
+              <p>Free and Fast Wi-Fi.</p>
+              <p>Leather seats.</p>
+              <p>Up to 5 seats.</p>
             </div>
             <div className={styles["vehicle-b-screen"]}></div>
             <div className={styles["vehicle-item-b"]}></div>
             <div className={styles["vehicle-b-description"]}>
               <h1>SPORT UTILITY VEHICLES</h1>
-              <p>
-                Pellentesque nec euismod ex. Nunc faucibus nulla et felis tempus
-                egestas. sPellentesque nec euismod ex. Nunc faucibus nulla et
-                felis tempus egestas. Pellentesque nec euismod ex. Nunc faucibus
-                nulla et felis tempus egestas. sPellentesque nec euismod ex.
-              </p>
+              <p>Spacious sedans with generous room for legs.</p>
+              <p>Free and Fast Wi-Fi.</p>
+              <p>Leather seats.</p>
+              <p>Up to 7 seats.</p>
             </div>
             <div className={styles["vehicle-text"]}>
               <h1>VEHICLES</h1>
@@ -93,6 +87,9 @@ export default function Home() {
 
         <section id="services" className={styles.services}>
           <div className={styles["services-display"]}>
+          <div className={styles["service-text"]}>
+              <h1>SERVICES</h1>
+            </div>
             <div className={styles["service-a-screen"]}></div>
             <div className={styles["service-a"]}></div>
             <div className={styles["service-a-info"]}>
@@ -108,9 +105,7 @@ export default function Home() {
             <div className={styles["service-c-info"]}>
               <h1>TRANSFERS IN THE CITY</h1>
             </div>
-            <div className={styles["service-text"]}>
-              <h1>SERVICES</h1>
-            </div>
+            
           </div>
         </section>
       </div>

@@ -86,7 +86,7 @@
 
 .about {
   position: relative;
-  height: 450px;
+  height: 550px;
   width: 100%;
 }
 
@@ -96,7 +96,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 450px;
+  height: 550px;
   filter: brightness(70%);
 }
 
@@ -134,12 +134,12 @@
 }
 
 .vehicles {
-  height: 600px;
+  height: 1000px;
   position: relative;
 }
 
 .vehicles-display {
-  height: 600px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
 }
@@ -168,7 +168,7 @@
 
 .vehicle-item-a {
   width: 100%;
-  height: 300px;
+  height: 500px;
   background-image: url("../public/s450.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@
   flex-direction: column;
   align-items: center;
   right: 0%;
-  top: 0%;
+  top: 10%;
   width: 50%;
   color: white;
 }
@@ -198,6 +198,7 @@
 
 .vehicle-a-description p {
   width: 80%;
+  margin: 0 0 10px 0;
 }
 
 .vehicle-b-screen {
@@ -225,7 +226,7 @@
 
 .vehicle-item-b {
   width: 100%;
-  height: 300px;
+  height: 500px;
   background-image: url("../public/yukon.jpg");
   background-position: center;
   background-size: cover;
@@ -243,7 +244,7 @@
   align-items: center;
   right: 0%;
   width: 50%;
-  top: 50%;
+  top: 60%;
   color: white;
 }
 
@@ -253,6 +254,7 @@
 
 .vehicle-b-description p {
   width: 80%;
+  margin: 0 0 10px 0;
 }
 
 .vehicle-text {
@@ -297,7 +299,7 @@
 .service-a {
   width: 34%;
   height: 35rem;
-  background-image: url("../public/airport.jpeg");
+  background-image: url("../public/luxury-1961577_1280.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -348,7 +350,7 @@
 .service-b {
   width: 32%;
   height: 35rem;
-  background-image: url("../public/napa.jpg");
+  background-image: url("../public/pexels-pixabay-51947.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -405,7 +407,7 @@
 .service-c {
   width: 34%;
   height: 35rem;
-  background-image: url("../public/pickup.jpeg");
+  background-image: url("../public/pexels-tima-miroshnichenko-5717640.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -471,6 +473,7 @@
 
   .card {
     width: 100%;
+    right: 0;
     background: none;
   }
 
@@ -495,7 +498,7 @@
   }
 
   .about-img {
-    filter: brightness(50%);
+    filter: brightness(90%);
   }
 
   .about-text {
@@ -505,7 +508,13 @@
     top: 0;
     bottom: 0;
     margin: 0;
-    background: none;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.8) 10%,
+      rgba(198, 198, 198, 0) 100%
+    );
   }
 
   .about-text h1 {
@@ -528,6 +537,7 @@
   .vehicles-display,
   .vehicles {
     height: 100%;
+    width: 100%;
     padding-top: 0rem;
     display: flex;
   }
@@ -560,10 +570,14 @@
 
   .vehicle-a-description p,
   .vehicle-b-description p {
-    font-size: 0.75rem;
+    font-size: 1rem;
     width: 70%;
-    text-align: center;
+    text-align: left;
     margin: 0;
+  }
+
+  .vehicle-b-description {
+    padding-bottom: 0;
   }
 
   .vehicle-text {
@@ -575,11 +589,18 @@
 
   .service-text {
     display: none;
+    position: relative;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
   }
 
   .vehicle-text h1,
   .service-text h1 {
-    font-size: 1.5rem;
+    font-size: 4rem;
+    padding: 1rem;
   }
 
   .services {
@@ -596,7 +617,7 @@
   .service-b,
   .service-c {
     width: 100%;
-    height: 10rem;
+    height: 30rem;
     margin: 0;
     filter: brightness(100%);
     transition: none;
@@ -642,9 +663,10 @@
   }
 
   .card p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     width: 100%;
     font-weight: 900;
+    text-align: left;
   }
 
   .card img {
@@ -659,7 +681,7 @@
 
   .about-img,
   .about {
-    height: 17rem;
+    height: 25rem;
   }
 
   .about-text h1 {
@@ -667,9 +689,10 @@
   }
 
   .about-text p {
-    font-size: 0.9rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 900;
     width: 90%;
+    text-align: center;
   }
 
   .vehicle-a-description h1,
@@ -680,11 +703,17 @@
   .vehicle-a-description p,
   .vehicle-b-description p {
     width: 90%;
-    text-align: justify;
+    font-size: 1rem;
   }
 
   .services-display {
     height: fit-content;
+  }
+
+  .service-a,
+  .service-b,
+  .service-c {
+    height: 20rem;
   }
 
   .service-a-info h1,
