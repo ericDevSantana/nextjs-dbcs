@@ -26,6 +26,7 @@ export default function Footer() {
             </Link>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.instagram.com/dynamicblackcar/"
             >
               <FontAwesomeIcon icon={faInstagram} size="2x" color="purple" />
