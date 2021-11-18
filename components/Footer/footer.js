@@ -41,10 +41,10 @@ export default function Footer() {
         <div className={styles["Footer-Other"]}>
           <h1>RESOURCES</h1>
           <div className={styles["Footer-Other-Links"]}>
-            <Link href="#vehicles">
+            <Link href="/#vehicles">
               <a>VEHICLES</a>
             </Link>
-            <Link href="#services">
+            <Link href="/#services">
               <a>SERVICES</a>
             </Link>
           </div>
