@@ -65,7 +65,7 @@ export default function Home() {
             <div className={styles["vehicle-item-a"]}></div>
             <div className={styles["vehicle-a-description"]}>
               <h1>LUXURY SEDANS</h1>
-              <p>Spacious sedans with generous room for legs.</p>
+              <p>Spacious sedans with generous leg room.</p>
               <p>Free and Fast Wi-Fi.</p>
               <p>Leather seats.</p>
               <p>Up to 5 seats.</p>
@@ -74,7 +74,7 @@ export default function Home() {
             <div className={styles["vehicle-item-b"]}></div>
             <div className={styles["vehicle-b-description"]}>
               <h1>SPORT UTILITY VEHICLES</h1>
-              <p>Spacious sedans with generous room for legs.</p>
+              <p>Spacious SUVs with generous leg room.</p>
               <p>Free and Fast Wi-Fi.</p>
               <p>Leather seats.</p>
               <p>Up to 7 seats.</p>
