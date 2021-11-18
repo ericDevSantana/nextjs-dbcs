@@ -27,8 +27,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(100%);
-  -webkit-filter: brightness(100%);
+  filter: brightness(120%);
+  -webkit-filter: brightness(120%);
 }
 
 .card {
@@ -188,19 +188,22 @@
   position: absolute;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   right: 0%;
-  top: 10%;
-  width: 50%;
+  top: 0%;
+  width: 40%;
   color: white;
 }
 
 .vehicle-a-description h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .vehicle-a-description p {
   width: 80%;
+  font-size: 1.5rem;
   margin: 0 0 10px 0;
+  text-align: left;
 }
 
 .vehicle-b-screen {
@@ -244,28 +247,31 @@
   position: absolute;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   right: 0%;
-  width: 50%;
-  top: 60%;
+  width: 40%;
+  top: 50%;
   color: white;
 }
 
 .vehicle-b-description h1 {
-  font-size: 2em;
+  font-size: 3rem;
 }
 
 .vehicle-b-description p {
   width: 80%;
   margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .vehicle-text {
   position: absolute;
   display: flex;
   justify-content: center;
-  margin-left: 3%;
-  margin-top: 2%;
-  z-index: 3;
+  padding: 0 10px 0 10px;
+  z-index: 2;
+  backdrop-filter: blur(5px) brightness(60%);
 }
 
 .vehicle-text h1 {
@@ -449,10 +455,9 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  margin-left: 55%;
-  right: 5%;
-  margin-top: 2%;
+  padding: 0 10px 0 10px;
   z-index: 2;
+  backdrop-filter: blur(5px) brightness(60%);
 }
 
 .service-text h1 {
@@ -492,7 +497,7 @@
 
   .card button {
     font-size: 1.5rem;
-    width: 70%;
+    width: 100%;
   }
 
   .about {

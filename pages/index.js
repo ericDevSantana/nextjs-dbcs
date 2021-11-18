@@ -87,7 +87,7 @@ export default function Home() {
 
         <section id="services" className={styles.services}>
           <div className={styles["services-display"]}>
-          <div className={styles["service-text"]}>
+            <div className={styles["service-text"]}>
               <h1>SERVICES</h1>
             </div>
             <div className={styles["service-a-screen"]}></div>
@@ -105,7 +105,6 @@ export default function Home() {
             <div className={styles["service-c-info"]}>
               <h1>TRANSFERS IN THE CITY</h1>
             </div>
-            
           </div>
         </section>
       </div>
