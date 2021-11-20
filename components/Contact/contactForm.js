@@ -1,4 +1,5 @@
 import React, { useReducer, useRef, useState } from "react";
+import Link from "next/link";
 import styles from "../Contact/ContactForm.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -36,6 +37,7 @@ export default function ContactForm() {
   const phoneRef = useRef(null);
   const emailRef = useRef(null);
   const messageRef = useRef(null);
+  const contactRef = useRef(null);
 
   const validateContactInput = (state) => {
     if (state.name && state.phone && state.message.trim() !== "") {
@@ -88,10 +90,15 @@ export default function ContactForm() {
     } else {
       // console.log("Message Not Sent!");
     }
+    handleScrollTop();
+  };
+
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div className={styles["contact-form"]}>
+    <div ref={contactRef} className={styles["contact-form"]}>
       <div className={styles["contact-background-image"]}></div>
       <div className={styles["contact-main"]}>
         <div className={styles["contact-title"]}>
@@ -160,7 +167,9 @@ export default function ContactForm() {
               </div>
               <div className={styles["contact-info-item"]}>
                 <FontAwesomeIcon icon={faPhone} size="2x" color="coral" />
-                <p>1+ (415) 767-6551</p>
+                <Link href="tel:+1-415-767-6551">
+                  <p>1+ (415) 767-6551</p>
+                </Link>
               </div>
             </div>
           </div>

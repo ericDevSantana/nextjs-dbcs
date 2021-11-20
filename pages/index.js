@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import NavBar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -42,9 +42,18 @@ export default function Home() {
               Dedicated and carefully vetted chauffeurs are making sure that you
               arrive comfortably and safely at your desired destination.
             </p>
-            <Link href="/contact">
-              <button>REQUEST A QUOTE</button>
-            </Link>
+            <div className={styles["home-buttons"]}>
+              <Link href="/contact">
+              <div className={styles["call-button"]}>
+                  <button>REQUEST A QUOTE</button>
+                </div>
+              </Link>
+              <Link href="tel:+1-415-767-6551">
+                <div className={styles["call-button"]}>
+                  <button>CALL NOW</button>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
         {/* -- ENDING INTRO BANNER -- */}
@@ -93,10 +102,7 @@ export default function Home() {
                 <Image src="/cadillacsuv.jpeg" layout="fill" />
               </div>
               <div className={styles["vehicle-item-c"]}>
-                <Image
-                  src="/cadillac.jpeg"
-                  layout="fill"
-                />
+                <Image src="/cadillac.jpeg" layout="fill" />
               </div>
             </div>
             {/* <div className={styles["vehicle-b-screen"]}></div> */}

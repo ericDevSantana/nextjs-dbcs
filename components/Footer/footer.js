@@ -53,7 +53,9 @@ export default function Footer() {
           <h1>CONTACT US</h1>
           <div className={styles["Footer-Contact-Item"]}>
             <FontAwesomeIcon icon={faPhone} size="1x" color="coral" />
-            <p>1+ (415) 767-6551</p>
+            <Link href="tel:+1-415-767-6551">
+              <p>1+ (415) 767-6551</p>
+            </Link>
           </div>
           <div className={styles["Footer-Contact-Item"]}>
             <FontAwesomeIcon icon={faEnvelope} size="1x" color="coral" />

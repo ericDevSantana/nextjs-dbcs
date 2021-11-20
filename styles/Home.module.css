@@ -5,7 +5,7 @@
 
 .container img {
   height: 400px;
-  width: 500px;
+  width: 600px;
   margin: auto;
   padding-top: 2rem;
 }
@@ -38,9 +38,9 @@
   bottom: 0%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 3rem 0 3rem 5%;
   color: white;
   background: linear-gradient(
     90deg,
@@ -53,15 +53,23 @@
 .card h1 {
   font-size: 6rem;
   font-weight: 500;
-  margin: 0 0 0 5%;
+  margin: 2rem 0 3.5rem 5%;
 }
 
 .card p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 900;
   width: 60%;
-  margin: 0 0 0 5%;
+  margin: 0 0 3.5rem 5%;
   text-align: left;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 60%;
+  margin: 0 0 0 5%;
 }
 
 .card button {
@@ -69,10 +77,9 @@
   background-color: rgb(255, 94, 0);
   border-radius: 5px;
   font-size: 1.5rem;
-  padding: 1rem;
-  width: 35%;
+  padding: 0.5rem;
+  width: fit-content;
   font-weight: 700;
-  margin: 0 0 0 5%;
   color: aliceblue;
 }
 
@@ -80,23 +87,34 @@
   cursor: pointer;
 }
 
+.call-button {
+  background-color: rgb(255, 94, 0);
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.call-button button {
+  width: 100%;
+}
+
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 1800px;
   margin: 0 auto 0 auto;
 }
 
 .about-img {
   position: relative;
-  height: 400px;
-  width: 45%;
-  margin: 2rem;
+  height: 500px;
+  width: 75%;
+  margin: 0 auto 2rem auto;
 }
 
 .about-text {
   display: flex;
-  width: 55%;
+  width: 100%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -105,14 +123,15 @@
 
 .about-text h1 {
   font-size: 4rem;
-  margin: 0;
+  margin: 1.5rem;
+  text-align: center;
 }
 
 .about-text p {
   font-size: 1.25rem;
   margin: 0 0 2rem 0;
-  width: 55%;
-  text-align: center;
+  width: 75%;
+  text-align: justify;
 }
 
 .vehicles-start {
@@ -289,9 +308,10 @@
 }
 
 @media (max-width: 1500px) {
+
   .backgroundImage {
     background-image: url("../public/auto-2178926_1920.jpg");
-    height: 700px;
+    height: 650px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: 1500px 1000px;
@@ -313,10 +333,10 @@
   }
 
   .card p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 900;
-    width: 80%;
-    text-align: justify;
+    width: 90%;
+    text-align: left;
   }
 
   .card button {
@@ -324,9 +344,26 @@
     background-color: rgb(255, 94, 0);
     border-radius: 5px;
     font-size: 1.5rem;
-    padding: 1rem;
-    width: 70%;
+    padding: 0.5rem;
+    width: fit-content;
     font-weight: 400;
+  }
+
+  .home-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+  }
+
+  .call-button {
+    background-color: rgb(255, 94, 0);
+    border-radius: 5px;
+  }
+
+  .call-button button {
+    width: 100%;
   }
 
   .container img {
@@ -416,14 +453,6 @@
 }
 
 @media (max-width: 800px) {
-  .backgroundImage {
-    background-image: url("../public/auto-2178926_1920.jpg");
-    height: 500px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 800px 600px;
-  }
-
   .card {
     background: linear-gradient(
       90deg,
@@ -434,23 +463,28 @@
   }
 
   .card h1 {
-    font-size: 3rem;
+    font-size: 70px;
     font-weight: 900;
-    margin: 0;
+    margin: 2rem 0 2rem 0;
   }
 
   .card p {
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: 900;
     width: 100%;
     text-align: left;
+    margin: 0 0 2rem 0;
+  }
+
+  .home-buttons {
     margin: 0;
+    width: 100%;
   }
 
   .card button {
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 900;
-    padding: 1rem;
+    padding: 0.5rem;
     width: 100%;
     margin: 0;
   }
@@ -529,25 +563,38 @@
   }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 420px) {
+  .backgroundImage {
+    background-image: url("../public/auto-2178926_1920.jpg");
+    height: 420px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 800px 600px;
+  }
+
+  .card {
+    padding: 3rem 5% 3rem 5%;
+  }
+
   .card h1 {
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: 900;
-    margin: 0;
   }
 
   .card p {
-    font-size: .85rem;
+    font-size: 15px;
     font-weight: 500;
     width: 100%;
     text-align: left;
-    margin: 0;
+  }
+
+  .home-buttons {
+    width: 100%;
   }
 
   .card button {
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 500;
-    padding: 0.75rem;
     width: 100%;
     margin: 0;
   }
@@ -584,5 +631,15 @@
   .service-text p {
     font-size: 1rem;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 412px) {
+  .backgroundImage {
+    background-image: url("../public/auto-2178926_1920.jpg");
+    height: 550px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 800px 600px;
   }
 }
