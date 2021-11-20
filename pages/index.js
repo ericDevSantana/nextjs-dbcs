@@ -72,7 +72,7 @@ export default function Home() {
                 Since every corporate event is different, you can trust Dynamic
                 Black Car Service to create a corporate travel package that best
                 suits your specific needs. Hire a personal chauffeur while
-                you're in town for a roadshow, convention or a meeting and focus
+                you`re in town for a roadshow, convention or a meeting and focus
                 on your business without dealing with transfers from one place
                 to another. Our Executive Car provides the latest luxury sedan
                 and SUV models.
