@@ -38,13 +38,12 @@ export default function Home() {
             {/* <img src="/brandBanner.jpg"></img> */}
             <h1>DYNAMIC BLACK CAR SERVICE</h1>
             <p>
-              Safe customer experience is an important goal in our service.
-              Dedicated and carefully vetted chauffeurs are making sure that you
-              arrive comfortably and safely at your desired destination.
+              Dynamic car service provides safe, dedicated and carefully vetted
+              drivers in the San Francisco Bay Area.
             </p>
             <div className={styles["home-buttons"]}>
               <Link href="/contact">
-              <div className={styles["call-button"]}>
+                <div className={styles["call-button"]}>
                   <button>REQUEST A QUOTE</button>
                 </div>
               </Link>

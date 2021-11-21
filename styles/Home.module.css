@@ -51,15 +51,15 @@
 }
 
 .card h1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 500;
   margin: 2rem 0 3.5rem 5%;
 }
 
 .card p {
-  font-size: 1.25rem;
-  font-weight: 900;
-  width: 60%;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 70%;
   margin: 0 0 3.5rem 5%;
   text-align: left;
 }
@@ -89,7 +89,8 @@
 
 .call-button {
   background-color: rgb(255, 94, 0);
-  padding: 0.5rem;
+  /* padding: 0.5rem */
+  display: flex;
   border-radius: 5px;
   margin-right: 1rem;
 }
@@ -308,10 +309,9 @@
 }
 
 @media (max-width: 1500px) {
-
   .backgroundImage {
     background-image: url("../public/auto-2178926_1920.jpg");
-    height: 650px;
+    height: 850px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: 1500px 1000px;
@@ -328,14 +328,13 @@
   }
 
   .card h1 {
-    font-size: 4rem;
+    font-size: 3.75rem;
     font-weight: 500;
   }
 
   .card p {
-    font-size: 1.25rem;
-    font-weight: 900;
-    width: 90%;
+    font-size: 1.5rem;
+    width: 70%;
     text-align: left;
   }
 
@@ -463,14 +462,14 @@
   }
 
   .card h1 {
-    font-size: 70px;
-    font-weight: 900;
+    font-size: 3.5rem;
+    font-weight: 800;
     margin: 2rem 0 2rem 0;
   }
 
   .card p {
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 1.75rem;
+    font-weight: 500;
     width: 100%;
     text-align: left;
     margin: 0 0 2rem 0;
@@ -502,7 +501,7 @@
   .about-text p {
     font-weight: 300;
     width: 98%;
-    text-align: center;
+    text-align: left;
   }
 
   .about-img {
@@ -514,7 +513,7 @@
     margin: 0 0 1rem 0;
     font-weight: 300;
     width: 98%;
-    text-align: center;
+    text-align: left;
   }
 
   .vehicle-item-a {
@@ -541,7 +540,7 @@
 
   .service-text p {
     width: 98%;
-    text-align: center;
+    text-align: left;
   }
 
   .service-items {
@@ -566,10 +565,10 @@
 @media (max-width: 420px) {
   .backgroundImage {
     background-image: url("../public/auto-2178926_1920.jpg");
-    height: 420px;
+    height: 620px;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 800px 600px;
+    background-size: 880px 650px;
   }
 
   .card {
@@ -577,12 +576,12 @@
   }
 
   .card h1 {
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: 900;
   }
 
   .card p {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 500;
     width: 100%;
     text-align: left;
@@ -596,7 +595,12 @@
     font-size: 15px;
     font-weight: 500;
     width: 100%;
+    padding: 0;
     margin: 0;
+  }
+
+  .call-button {
+    padding: 5px;
   }
 
   .about-text {
@@ -637,9 +641,17 @@
 @media (max-width: 412px) {
   .backgroundImage {
     background-image: url("../public/auto-2178926_1920.jpg");
-    height: 550px;
+    height: 690px;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 800px 600px;
+    background-size: 880px 690px;
+  }
+
+  .card button {
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
