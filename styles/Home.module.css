@@ -500,7 +500,7 @@
 
   .about-text p {
     font-weight: 300;
-    width: 98%;
+    width: 90%;
     text-align: left;
   }
 
@@ -512,7 +512,7 @@
   .vehicle-text p {
     margin: 0 0 1rem 0;
     font-weight: 300;
-    width: 98%;
+    width: 90%;
     text-align: left;
   }
 
@@ -539,7 +539,7 @@
   }
 
   .service-text p {
-    width: 98%;
+    width: 90%;
     text-align: left;
   }
 
