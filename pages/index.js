@@ -50,7 +50,7 @@ export default function Home() {
               </Link>
               <Link href="tel:+1-415-767-6551">
                 <div className={styles["call-button"]}>
-                  <button>CALL NOW</button>
+                  <button>CALL/TEXT NOW</button>
                 </div>
               </Link>
             </div>

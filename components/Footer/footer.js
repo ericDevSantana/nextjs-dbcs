@@ -59,7 +59,9 @@ export default function Footer() {
           </div>
           <div className={styles["Footer-Contact-Item"]}>
             <FontAwesomeIcon icon={faEnvelope} size="1x" color="coral" />
-            <p>DYNAMICBLACKCAR@GMAIL.COM</p>
+            <Link href="/contact">
+              <p>DYNAMICBLACKCAR@GMAIL.COM</p>
+            </Link>
           </div>
         </div>
       </div>
