@@ -40,7 +40,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 3rem 0 3rem 5%;
+  padding: 3rem 0 3rem 3%;
   color: white;
   background: linear-gradient(
     90deg,
@@ -75,7 +75,7 @@
 .card button {
   border: none;
   background-color: rgb(255, 94, 0);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   font-size: 1.5rem;
   padding: 0.5rem;
   width: fit-content;
@@ -91,7 +91,7 @@
   background-color: rgb(255, 94, 0);
   /* padding: 0.5rem */
   display: flex;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   margin-right: 1rem;
 }
 
@@ -341,7 +341,6 @@
   .card button {
     border: none;
     background-color: rgb(255, 94, 0);
-    border-radius: 5px;
     font-size: 1.5rem;
     padding: 0.5rem;
     width: fit-content;
@@ -358,7 +357,7 @@
 
   .call-button {
     background-color: rgb(255, 94, 0);
-    border-radius: 5px;
+    /* border-radius: 5px; */
   }
 
   .call-button button {
@@ -452,25 +451,34 @@
 }
 
 @media (max-width: 800px) {
+
+  .backgroundImage {
+    background-image: url("../public/auto-2178926_1920.jpg");
+    height: 550px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 1200px 690px;
+  }
+
   .card {
     background: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0.5) 70%,
-      rgba(198, 198, 198, 0) 100%
+      rgba(0, 0, 0, .85) 0%,
+      rgba(0, 0, 0, 0.45) 40%,
+      rgba(198, 198, 198, 0.1) 90%
     );
   }
 
   .card h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
+    font-size: 3rem;
+    font-weight: 700;
     margin: 2rem 0 2rem 0;
   }
 
   .card p {
-    font-size: 1.75rem;
-    font-weight: 500;
-    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 90%;
     text-align: left;
     margin: 0 0 2rem 0;
   }
@@ -481,56 +489,60 @@
   }
 
   .card button {
-    font-size: 18px;
-    font-weight: 900;
-    padding: 0.5rem;
+    font-size: 13px;
+    font-weight: 500;
     width: 100%;
     margin: 0;
   }
 
+  .call-button {
+    padding: 0;
+  }
+
   .container img {
     height: 230px;
-    width: 100%;
+    width: 95%;
     padding: 0;
   }
 
   .about-text h1 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    margin-top: 0;
   }
 
   .about-text p {
     font-weight: 300;
-    width: 90%;
+    width: 95%;
     text-align: left;
   }
 
   .about-img {
     height: 250px;
-    width: 100%;
+    width: 95%;
   }
 
   .vehicle-text p {
     margin: 0 0 1rem 0;
     font-weight: 300;
-    width: 90%;
+    width: 95%;
     text-align: left;
   }
 
   .vehicle-item-a {
     height: 300px;
-    width: 100%;
+    width: 95%;
     margin: 0 0 2rem 0;
   }
 
   .vehicle-item-b {
     height: 300px;
-    width: 100%;
+    width: 95%;
     margin: 0 0 2rem 0;
   }
 
   .vehicle-item-c {
     height: 300px;
-    width: 100%;
+    width: 95%;
     margin: 0 0 0 0;
   }
 
@@ -539,7 +551,7 @@
   }
 
   .service-text p {
-    width: 90%;
+    width: 95%;
     text-align: left;
   }
 
@@ -550,7 +562,7 @@
   }
 
   .first-service {
-    width: 100%;
+    width: 95%;
   }
 
   .service-a {
@@ -562,29 +574,32 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 412px) {
   .backgroundImage {
     background-image: url("../public/auto-2178926_1920.jpg");
-    height: 620px;
+    height: 680px;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 880px 650px;
+    background-size: 880px 680px;
   }
 
   .card {
-    padding: 3rem 5% 3rem 5%;
+    padding: 3.5rem 4% 3rem 4%;
+    width: 100%;
   }
 
   .card h1 {
-    font-size: 3rem;
+    font-size: 3.25rem;
     font-weight: 900;
+    margin-bottom: 20px;
   }
 
   .card p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
     width: 100%;
     text-align: left;
+    margin-bottom: 20pxrem;
   }
 
   .home-buttons {
@@ -596,11 +611,10 @@
     font-weight: 500;
     width: 100%;
     padding: 0;
-    margin: 0;
   }
 
   .call-button {
-    padding: 5px;
+    padding: 9px;
   }
 
   .about-text {
@@ -638,7 +652,7 @@
   }
 }
 
-@media (max-width: 412px) {
+/* @media (max-width: 412px) {
   .backgroundImage {
     background-image: url("../public/auto-2178926_1920.jpg");
     height: 690px;
@@ -654,4 +668,4 @@
     padding: 0;
     margin: 0;
   }
-}
+} */
