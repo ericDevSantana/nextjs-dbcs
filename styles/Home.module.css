@@ -501,7 +501,7 @@
 
   .container img {
     height: 230px;
-    width: 95%;
+    width: 91%;
     padding: 0;
   }
 
@@ -512,37 +512,37 @@
 
   .about-text p {
     font-weight: 300;
-    width: 95%;
+    width: 91%;
     text-align: left;
   }
 
   .about-img {
     height: 250px;
-    width: 95%;
+    width: 91%;
   }
 
   .vehicle-text p {
     margin: 0 0 1rem 0;
     font-weight: 300;
-    width: 95%;
+    width: 91%;
     text-align: left;
   }
 
   .vehicle-item-a {
     height: 300px;
-    width: 95%;
+    width: 91%;
     margin: 0 0 2rem 0;
   }
 
   .vehicle-item-b {
     height: 300px;
-    width: 95%;
+    width: 91%;
     margin: 0 0 2rem 0;
   }
 
   .vehicle-item-c {
     height: 300px;
-    width: 95%;
+    width: 91%;
     margin: 0 0 0 0;
   }
 
@@ -551,7 +551,7 @@
   }
 
   .service-text p {
-    width: 95%;
+    width: 91%;
     text-align: left;
   }
 
@@ -562,7 +562,7 @@
   }
 
   .first-service {
-    width: 95%;
+    width: 91%;
   }
 
   .service-a {
