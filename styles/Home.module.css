@@ -10,6 +10,14 @@
   padding-top: 2rem;
 }
 
+.business-card {
+  color: "white";
+  background-color: black;
+  text-align: center;
+  padding: 1rem 0 0 0;
+  font-size: 1rem;
+}
+
 .body {
   display: flex;
   flex-direction: column;
@@ -650,21 +658,3 @@
     margin-top: 0;
   }
 }
-
-/* @media (max-width: 412px) {
-  .backgroundImage {
-    background-image: url("../public/auto-2178926_1920.jpg");
-    height: 690px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 880px 690px;
-  }
-
-  .card button {
-    font-size: 15px;
-    font-weight: 500;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-} */

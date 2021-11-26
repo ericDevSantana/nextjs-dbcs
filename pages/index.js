@@ -211,15 +211,7 @@ export default function Home() {
         alt="Image of a business card."
         src="/card.jpeg"
       ></img>
-      <div
-        style={{
-          color: "white",
-          backgroundColor: "black",
-          textAlign: "center",
-          padding: "1rem 0 0 0",
-          fontSize: "1rem",
-        }}
-      >
+      <div className={styles["business-card"]}>
         <Link href="#home">
           <a>
             <FontAwesomeIcon icon={faArrowUp} size="1x" />
