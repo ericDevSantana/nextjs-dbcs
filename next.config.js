@@ -3,5 +3,6 @@ module.exports = {
   env: {
     SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
     BUSINESS_EMAIL: process.env.BUSINESS_EMAIL,
+    NEXT_PUBLIC_CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL,
   },
 };

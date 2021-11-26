@@ -163,7 +163,7 @@ export default function ContactForm() {
               <h1>Any questions?</h1>
               <div className={styles["contact-info-item"]}>
                 <FontAwesomeIcon icon={faEnvelope} size="2x" color="coral" />
-                <p>DYNAMICBLACKCAR@GMAIL.COM</p>
+                <p>{process.env.NEXT_PUBLIC_CONTACT_EMAIL}</p>
               </div>
               <div className={styles["contact-info-item"]}>
                 <FontAwesomeIcon icon={faPhone} size="2x" color="coral" />
