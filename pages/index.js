@@ -22,7 +22,7 @@ export default function Home() {
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="language" content="English" />
+        <meta name="lang" content="en-us" />
         <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:description"
@@ -207,7 +207,11 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <img className={styles["company-card"]} src="/card.jpeg"></img>
+      <img
+        className={styles["company-card"]}
+        alt="Image of a business card."
+        src="/card.jpeg"
+      ></img>
       <div
         style={{
           color: "white",
