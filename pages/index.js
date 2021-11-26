@@ -21,7 +21,7 @@ export default function Home() {
           content="limo, drivers, professional, time, on time, safe, Bay Area, San Francisco, bay, area, peninsula, SUV, black car, mercedes, luxury, guaranteed, service, car, dynamic, sedan, spacious, comfortable, leather, leather seats, clean, arrive, style, destination, quality, transportation, Uber, Lyft, ride-share, road, traffic, avoid, small business, business, transportation business, executive car, tourist, airport, pick up, drop off, transfers, city, downtown, hotel"
         />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <link rel="icon" href="/favicon.ico" />
         <meta
