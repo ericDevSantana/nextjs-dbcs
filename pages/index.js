@@ -20,9 +20,8 @@ export default function Home() {
           name="keywords"
           content="limo, drivers, professional, time, on time, safe, Bay Area, San Francisco, bay, area, peninsula, SUV, black car, mercedes, luxury, guaranteed, service, car, dynamic, sedan, spacious, comfortable, leather, leather seats, clean, arrive, style, destination, quality, transportation, Uber, Lyft, ride-share, road, traffic, avoid, small business, business, transportation business, executive car, tourist, airport, pick up, drop off, transfers, city, downtown, hotel"
         />
-        <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="lang" content="en-us" />
+        <meta name="lang" content="en" />
         <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:description"
@@ -69,7 +68,7 @@ export default function Home() {
 
         <section id="about" className={styles.about}>
           <div className={styles["about-text"]}>
-            <h1>ABOUT US</h1>
+            <h2>ABOUT US</h2>
             <p>
               Dynamic Black Car Service is a company specializing in private
               luxury transportation solutions: private and group transfers,
@@ -89,7 +88,7 @@ export default function Home() {
         <section id="vehicles" className={styles["vehicles-start"]}>
           <div className={styles["vehicles-display"]}>
             <div className={styles["vehicle-text"]}>
-              <h1>VEHICLES</h1>
+              <h2>VEHICLES</h2>
               <p>
                 Since every corporate event is different, you can trust Dynamic
                 Black Car Service to create a corporate travel package that best
@@ -138,7 +137,7 @@ export default function Home() {
         <section id="services" className={styles.services}>
           <div className={styles["services-display"]}>
             <div className={styles["service-text"]}>
-              <h1>SERVICES</h1>
+              <h2>SERVICES</h2>
               <p>
                 Are you a tourist coming to town for an unforgettable vacation,
                 a resident returning from a business trip, a professional in
@@ -162,7 +161,7 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles["service-a-info"]}>
-                  <h1>BAY AREA AIRPORTS</h1>
+                  <h3>BAY AREA AIRPORTS</h3>
                 </div>
               </div>
               {/* <div className={styles["service-b-screen"]}></div> */}
@@ -175,7 +174,7 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles["service-a-info"]}>
-                  <h1>WINE COUNTRY TOURS</h1>
+                  <h3>WINE COUNTRY TOURS</h3>
                 </div>
               </div>
               {/* <div className={styles["service-c-screen"]}></div> */}
@@ -188,7 +187,7 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles["service-a-info"]}>
-                  <h1>TRANSFERS IN THE CITY</h1>
+                  <h3>TRANSFERS IN THE CITY</h3>
                 </div>
               </div>
               <div className={styles["first-service"]}>
@@ -200,7 +199,7 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles["service-a-info"]}>
-                  <h1>EVENTS AND MEETINGS</h1>
+                  <h3>EVENTS AND MEETINGS</h3>
                 </div>
               </div>
             </div>

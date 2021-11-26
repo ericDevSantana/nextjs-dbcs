@@ -10,7 +10,7 @@
   z-index: 2;
 }
 
-.Footer h1 {
+.Footer h2 {
   color: rgb(255, 255, 255);
 }
 
@@ -35,7 +35,7 @@
   justify-content: space-between;
 }
 
-.Footer-Social-Media h1 {
+.Footer-Social-Media h2 {
   width: 100%;
   font-size: 1.5rem;
   margin-top: 1.5rem;
@@ -60,7 +60,7 @@
   align-items: center;
 }
 
-.Footer-Other h1 {
+.Footer-Other h2 {
   width: 100%;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -95,7 +95,7 @@
   text-align: center;
 }
 
-.Footer-Contact h1 {
+.Footer-Contact h2 {
   width: 100%;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -146,7 +146,7 @@
     justify-content: flex-start;
   }
 
-  .Footer-Social-Media h1 {
+  .Footer-Social-Media h2 {
     margin: 1rem 0 0 0;
     font-size: 1.5rem;
   }
@@ -161,7 +161,7 @@
     cursor: pointer;
   }
 
-  .Footer-Other h1 {
+  .Footer-Other h2 {
     margin: 1rem 0 0 0;
   }
 
@@ -184,7 +184,7 @@
     border-left: 1px solid gray;
   }
 
-  .Footer-Contact h1 {
+  .Footer-Contact h2 {
     margin: 1rem 0 1rem 0;
     font-size: 1.5rem;
     text-align: center;
@@ -245,7 +245,7 @@
     font-size: 0.75rem;
   }
 
-  .Footer-Info h1 {
+  .Footer-Info h2 {
     margin: 0 0 10px 0;
     font-size: 1.5rem;
   }

@@ -13,7 +13,7 @@ export default function Footer() {
     <div className={styles["Footer"]}>
       <div className={styles["Footer-Info"]}>
         <div className={styles["Footer-Social-Media"]}>
-          <h1>FOLLOW US</h1>
+          <h2>FOLLOW US</h2>
           <div className={styles["Footer-Social-Media-Links"]}>
             <a
               target="_blank"
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles["Footer-Other"]}>
-          <h1>RESOURCES</h1>
+          <h2>RESOURCES</h2>
           <div className={styles["Footer-Other-Links"]}>
             <Link href="/#vehicles">
               <a>VEHICLES</a>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles["Footer-Contact"]}>
-          <h1>CONTACT US</h1>
+          <h2>CONTACT US</h2>
           <div className={styles["Footer-Contact-Item"]}>
             <FontAwesomeIcon icon={faPhone} size="1x" color="coral" />
             <Link href="tel:+1-415-767-6551">
