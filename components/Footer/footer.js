@@ -60,7 +60,7 @@ export default function Footer() {
           <div className={styles["Footer-Contact-Item"]}>
             <FontAwesomeIcon icon={faEnvelope} size="1x" color="coral" />
             <Link href="/contact">
-              <p>{process.env.NEXT_PUBLIC_BUSINESS_EMAIL}</p>
+              <p>{process.env.NEXT_PUBLIC_CONTACT_EMAIL}</p>
             </Link>
           </div>
         </div>
