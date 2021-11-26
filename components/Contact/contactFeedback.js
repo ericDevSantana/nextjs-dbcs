@@ -1,5 +1,5 @@
 import styles from "../Contact/ContactForm.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function ContactFeedback(props) {
   const [clicked, setClicked] = useState(true);

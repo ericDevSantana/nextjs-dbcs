@@ -12,11 +12,21 @@ export default function Home() {
     <div id="home" className={styles.container}>
       <Head>
         <title>Dynamic Black Car Service</title>
-        <meta name="description" content="Arrive on time and in style." />
+        <meta
+          name="description"
+          content="Arrive on time and in style. Safe customer experience is an important goal in our service. Dedicated and carefully vetted drivers are making sure that you arrive comfortably and safely at your desired destination."
+        />
+        <meta
+          name="keywords"
+          content="limo, drivers, professional, time, on time, safe, Bay Area, San Francisco, bay, area, peninsula, SUV, black car, mercedes, luxury, guaranteed, service, car, dynamic, sedan, spacious, comfortable, leather, leather seats, clean, arrive, style, destination, quality, transportation, Uber, Lyft, ride-share, road, traffic, avoid, small business, business, transportation business, executive car, tourist, airport, pick up, drop off, transfers, city, downtown, hotel"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
         <link rel="icon" href="/favicon.ico" />
         <meta
           property="og:description"
-          content="Arrive on time and in style."
+          content="Arrive on time and in style. Safe customer experience is an important goal in our service. Dedicated and carefully vetted drivers are making sure that you arrive comfortably and safely at your desired destination."
         />
         <meta property="og:title" content="Dynamic Black Car Service" />
         <meta property="og:type" content="website" />
@@ -68,7 +78,11 @@ export default function Home() {
             </p>
           </div>
           <div className={styles["about-img"]}>
-            <Image src="/sanfrancisco.jpg" layout="fill" />
+            <Image
+              alt="Image of a San Francisco California neighborhood."
+              src="/sanfrancisco.jpg"
+              layout="fill"
+            />
           </div>
         </section>
 
@@ -89,19 +103,32 @@ export default function Home() {
             {/* <div className={styles["vehicle-a-screen"]}></div> */}
             <div className={styles["vehicles"]}>
               <div className={styles["vehicle-item-a"]}>
-                <Image src="/backseat.jpeg" layout="fill" />
+                <Image
+                  alt="Image of a luxury car's backseat."
+                  src="/backseat.jpeg"
+                  layout="fill"
+                />
               </div>
               <div className={styles["vehicle-item-a"]}>
                 <Image
+                  alt="Image of four luxurious cars."
                   src="/carson-masterson-4uH8_ld-Vo8-unsplash.jpg"
                   layout="fill"
                 />
               </div>
               <div className={styles["vehicle-item-b"]}>
-                <Image src="/cadillacsuv.jpeg" layout="fill" />
+                <Image
+                  alt="Image of a black luxurious Sport Utility Vehicle."
+                  src="/cadillacsuv.jpeg"
+                  layout="fill"
+                />
               </div>
               <div className={styles["vehicle-item-c"]}>
-                <Image src="/cadillac.jpeg" layout="fill" />
+                <Image
+                  alt="Image of a luxury car's interior."
+                  src="/cadillac.jpeg"
+                  layout="fill"
+                />
               </div>
             </div>
             {/* <div className={styles["vehicle-b-screen"]}></div> */}
@@ -128,7 +155,11 @@ export default function Home() {
             <div className={styles["service-items"]}>
               <div className={styles["first-service"]}>
                 <div className={styles["service-a"]}>
-                  <Image src="/luxury-1961577_1280.jpg" layout="fill" />
+                  <Image
+                    alt="Image of a luxurious car and a private jet."
+                    src="/luxury-1961577_1280.jpg"
+                    layout="fill"
+                  />
                 </div>
                 <div className={styles["service-a-info"]}>
                   <h1>BAY AREA AIRPORTS</h1>
@@ -137,7 +168,11 @@ export default function Home() {
               {/* <div className={styles["service-b-screen"]}></div> */}
               <div className={styles["first-service"]}>
                 <div className={styles["service-a"]}>
-                  <Image src="/pexels-pixabay-51947.jpg" layout="fill" />
+                  <Image
+                    alt="Image of Napa County."
+                    src="/pexels-pixabay-51947.jpg"
+                    layout="fill"
+                  />
                 </div>
                 <div className={styles["service-a-info"]}>
                   <h1>WINE COUNTRY TOURS</h1>
@@ -146,7 +181,11 @@ export default function Home() {
               {/* <div className={styles["service-c-screen"]}></div> */}
               <div className={styles["first-service"]}>
                 <div className={styles["service-a"]}>
-                  <Image src="/tranfers.jpeg" layout="fill" />
+                  <Image
+                    alt="Image of a person in the back seat of a luxurious car using a laptop."
+                    src="/tranfers.jpeg"
+                    layout="fill"
+                  />
                 </div>
                 <div className={styles["service-a-info"]}>
                   <h1>TRANSFERS IN THE CITY</h1>
@@ -155,6 +194,7 @@ export default function Home() {
               <div className={styles["first-service"]}>
                 <div className={styles["service-a"]}>
                   <Image
+                    alt="Image of a conference."
                     src="/samuel-pereira-uf2nnANWa8Q-unsplash.jpg"
                     layout="fill"
                   />

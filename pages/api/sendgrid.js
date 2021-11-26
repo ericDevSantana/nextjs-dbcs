@@ -1,5 +1,4 @@
 import sendgrid from "@sendgrid/mail";
-import pic from "../../public/card.jpeg";
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
