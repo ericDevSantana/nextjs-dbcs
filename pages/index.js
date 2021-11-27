@@ -32,7 +32,7 @@ export default function Home() {
         <meta property="og:url" content="https://nextjs-dbcs.vercel.app/" />
         <meta
           property="og:image"
-          content="https://nextjs-dbcs.vercel.app/card.jpeg"
+          content="https://www.dynamicbcs.com/card.jpeg"
         />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
