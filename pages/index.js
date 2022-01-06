@@ -173,7 +173,7 @@ export default function Home() {
                 <div className={styles["service-a"]}>
                   <Image
                     alt="Image of a luxurious car and a private jet."
-                    src="/luxury-1961577_1280.jpg"
+                    src="/airports.jpeg"
                     layout="fill"
                   />
                 </div>
