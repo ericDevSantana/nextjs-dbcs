@@ -5,6 +5,7 @@ import {
   faTwitter,
   faFacebook,
   faInstagram,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
@@ -36,6 +37,13 @@ export default function Footer() {
             >
               <FontAwesomeIcon icon={faFacebook} size="2x" color="royalblue" />
             </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://wa.me/14157676551"
+            >
+              <FontAwesomeIcon icon={faWhatsapp} size="2x" color="lightgreen" />
+            </a>
           </div>
         </div>
         <div className={styles["Footer-Other"]}>
@@ -49,6 +57,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+        {/* // */}
         <div className={styles["Footer-Contact"]}>
           <h2>CONTACT US</h2>
           <div className={styles["Footer-Contact-Item"]}>
