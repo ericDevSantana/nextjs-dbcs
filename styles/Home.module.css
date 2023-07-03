@@ -29,7 +29,7 @@
 }
 
 .backgroundImage {
-  background-image: url("../public/auto-2178926_1920.jpg");
+  background-image: url("../public/auto-2178926_1920.avif");
   height: 750px;
   background-attachment: fixed;
   background-position: top;
@@ -318,7 +318,7 @@
 
 @media (max-width: 1500px) {
   .backgroundImage {
-    background-image: url("../public/auto-2178926_1920.jpg");
+    background-image: url("../public/auto-2178926_1920.avif");
     height: 650px;
     background-position: top;
     background-repeat: no-repeat;
@@ -460,7 +460,7 @@
 
 @media (max-width: 800px) {
   .backgroundImage {
-    background-image: url("../public/auto-2178926_1920.jpg");
+    background-image: url("../public/auto-2178926_1920.avif");
     height: 550px;
     background-position: top;
     background-repeat: no-repeat;
@@ -583,7 +583,7 @@
 
 @media (max-width: 412px) {
   .backgroundImage {
-    background-image: url("../public/auto-2178926_1920.jpg");
+    background-image: url("../public/auto-2178926_1920.avif");
     height: 680px;
     background-position: top;
     background-repeat: no-repeat;
