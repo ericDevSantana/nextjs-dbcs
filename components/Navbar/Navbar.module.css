@@ -20,9 +20,10 @@
   z-index: 3;
 }
 
-.NavBar-Brand {
-  font-size: 2.5rem;
-  margin-left: 3%;
+.NavBar-Brand h2 {
+  font-size: 2rem;
+  padding: 0;
+  margin-left: 3rem;
 }
 
 .NavBar-Brand:hover {
@@ -33,7 +34,7 @@
   height: 100%;
   width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-right: 3%;
 }
 
@@ -59,7 +60,7 @@
   align-self: center;
   justify-content: center;
   height: 100%;
-  width: 7rem;
+  margin-left: 20px;
 }
 
 .NavBar-Links a:hover {
@@ -105,9 +106,7 @@
 }
 
 @media (max-width: 1860px) {
-  .NavBar-Links a {
-    width: fit-content;
-  }
+
 }
 
 @media (max-width: 1300px) {

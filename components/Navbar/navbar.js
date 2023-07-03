@@ -48,34 +48,24 @@ export default function NavBar(props) {
     <div className={styles["NavBar"]}>
       <div className={styles["NavBar-main"]}>
         <Link href="/">
-          <div className={styles["NavBar-Brand"]}>DYNAMIC BCS</div>
+          <div className={styles["NavBar-Brand"]}>
+            <h2>DYNAMIC BCS</h2>
+          </div>
         </Link>
 
         {props.contact ? (
           <div className={styles["NavBar-Links-Contact"]}>
             <Link href="/">
-              <a>
-                <FontAwesomeIcon icon={faArrowLeft} size="2x" />
-              </a>
+              <FontAwesomeIcon icon={faArrowLeft} size="2x" />
             </Link>
           </div>
         ) : windowDimensions.width > 1300 ? (
           <div className={styles["NavBar-Links"]}>
-            <Link href="#home">
-              <a>HOME</a>
-            </Link>
-            <Link href="#about">
-              <a>ABOUT</a>
-            </Link>
-            <Link href="#vehicles">
-              <a>VEHICLES</a>
-            </Link>
-            <Link href="#services">
-              <a>SERVICES</a>
-            </Link>
-            <Link href="/contact">
-              <a>CONTACT</a>
-            </Link>
+            <Link href="#home">HOME</Link>
+            <Link href="#about">ABOUT</Link>
+            <Link href="#vehicles">VEHICLES</Link>
+            <Link href="#services">SERVICES</Link>
+            <Link href="/contact">CONTACT</Link>
           </div>
         ) : (
           <div onClick={clickMenuHandle} className={styles["sandwich-menu"]}>
@@ -90,20 +80,12 @@ export default function NavBar(props) {
             onClick={clickMenuHandle}
             className={styles["sandwich-menu-links"]}
           >
-            <Link href="#home">
-              <a>HOME</a>
-            </Link>
-            <Link href="#about">
-              <a>ABOUT</a>
-            </Link>
-            <Link href="#vehicles">
-              <a>VEHICLES</a>
-            </Link>
-            <Link href="#services">
-              <a>SERVICES</a>
-            </Link>
+            <Link href="#home">HOME</Link>
+            <Link href="#about">ABOUT</Link>
+            <Link href="#vehicles">VEHICLES</Link>
+            <Link href="#services">SERVICES</Link>
             <Link onClick={handleContactClick} href="/contact">
-              <a>CONTACT</a>
+              CONTACT
             </Link>
           </div>
         </div>

@@ -49,12 +49,8 @@ export default function Footer() {
         <div className={styles["Footer-Other"]}>
           <h2>RESOURCES</h2>
           <div className={styles["Footer-Other-Links"]}>
-            <Link href="/#vehicles">
-              <a>VEHICLES</a>
-            </Link>
-            <Link href="/#services">
-              <a>SERVICES</a>
-            </Link>
+            <Link href="/#vehicles">VEHICLES</Link>
+            <Link href="/#services">SERVICES</Link>
           </div>
         </div>
         {/* // */}

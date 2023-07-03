@@ -186,7 +186,7 @@ export default function Home() {
                 <div className={styles["service-a"]}>
                   <Image
                     alt="Image of Napa County."
-                    src="/pexels-pixabay-51947.jpg"
+                    src="/pexels-pixabay-51947.avif"
                     layout="fill"
                   />
                 </div>
@@ -230,9 +230,9 @@ export default function Home() {
       ></img>
       <div className={styles["business-card"]}>
         <Link href="#home">
-          <a>
+
             <FontAwesomeIcon icon={faArrowUp} size="1x" />
-          </a>
+
         </Link>
         <p>BACK TO TOP</p>
       </div>
