@@ -100,7 +100,7 @@ export default function Home() {
           <div className={styles["about-img"]}>
             <Image
               alt="Image of a San Francisco California neighborhood."
-              src="/sanfrancisco.jpg"
+              src="/sanfrancisco.avif"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
@@ -126,7 +126,7 @@ export default function Home() {
               <div className={styles["vehicle-item-a"]}>
                 <Image
                   alt="Image of a luxury car's backseat."
-                  src="/backseat.jpeg"
+                  src="/backseat.avif"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
