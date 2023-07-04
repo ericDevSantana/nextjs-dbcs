@@ -11,15 +11,14 @@ import Script from "next/script";
 export default function Home() {
   return (
     <div id="home" className={styles.container}>
-      <Head>
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <Script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-        ></Script>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      ></Script>
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -27,8 +26,9 @@ export default function Home() {
               page_path: window.location.pathname,
             });
           `,
-          }}
-        ></Script>
+        }}
+      ></Script>
+      <Head>
         <title>Dynamic Black Car Service</title>
         <meta
           name="description"
