@@ -13,10 +13,12 @@ export default function Home() {
     <div id="home" className={styles.container}>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
+        id="gtm-script"
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       ></Script>
       <Script
+        id="gtm-scr"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -69,12 +71,12 @@ export default function Home() {
               drivers in the San Francisco Bay Area.
             </p>
             <div className={styles["home-buttons"]}>
-              <Link href="/contact">
+              <Link passHref href="/contact">
                 <div className={styles["call-button"]}>
                   <button>REQUEST A QUOTE</button>
                 </div>
               </Link>
-              <Link href="tel:+1-415-767-6551">
+              <Link passHref href="tel:+1-415-767-6551">
                 <div className={styles["call-button"]}>
                   <button>CALL/TEXT NOW</button>
                 </div>
@@ -233,13 +235,15 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <img
-        className={styles["company-card"]}
+      <Image
         alt="Image of a business card."
         src="/card.avif"
-      ></img>
+        height={400}
+        width={600}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
       <div className={styles["business-card"]}>
-        <Link href="#home">
+        <Link passHref href="#home">
           <FontAwesomeIcon icon={faArrowUp} size="1x" />
           <p>BACK TO TOP</p>
         </Link>
