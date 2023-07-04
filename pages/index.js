@@ -18,6 +18,7 @@ export default function Home() {
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       ></Script>
       <Script
+        async
         id="gtm-scr"
         dangerouslySetInnerHTML={{
           __html: `
