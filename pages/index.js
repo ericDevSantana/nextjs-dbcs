@@ -6,17 +6,18 @@ import NavBar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <div id="home" className={styles.container}>
       <Head>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
+        <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-        />
-        <script
+        ></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
@@ -27,7 +28,7 @@ export default function Home() {
             });
           `,
           }}
-        />
+        ></Script>
         <title>Dynamic Black Car Service</title>
         <meta
           name="description"
@@ -49,7 +50,7 @@ export default function Home() {
         <meta property="og:url" content="https://nextjs-dbcs.vercel.app/" />
         <meta
           property="og:image"
-          content="https://www.dynamicbcs.com/card.jpeg"
+          content="https://www.dynamicbcs.com/card.avif"
         />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
@@ -97,7 +98,8 @@ export default function Home() {
             <Image
               alt="Image of a San Francisco California neighborhood."
               src="/sanfrancisco.jpg"
-              layout="fill"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </section>
@@ -122,28 +124,32 @@ export default function Home() {
                 <Image
                   alt="Image of a luxury car's backseat."
                   src="/backseat.jpeg"
-                  layout="fill"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className={styles["vehicle-item-a"]}>
                 <Image
                   alt="Image of four luxurious cars."
                   src="/carson-masterson-4uH8_ld-Vo8-unsplash.jpg"
-                  layout="fill"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className={styles["vehicle-item-b"]}>
                 <Image
                   alt="Image of a black luxurious Sport Utility Vehicle."
                   src="/cadillacsuv.jpeg"
-                  layout="fill"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className={styles["vehicle-item-c"]}>
                 <Image
                   alt="Image of a luxury car's interior."
                   src="/cadillac.jpeg"
-                  layout="fill"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             </div>
@@ -174,7 +180,8 @@ export default function Home() {
                   <Image
                     alt="Image of a luxurious car and a private jet."
                     src="/MainAirport.jpeg"
-                    layout="fill"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className={styles["service-a-info"]}>
@@ -187,7 +194,8 @@ export default function Home() {
                   <Image
                     alt="Image of Napa County."
                     src="/pexels-pixabay-51947.avif"
-                    layout="fill"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className={styles["service-a-info"]}>
@@ -200,7 +208,8 @@ export default function Home() {
                   <Image
                     alt="Image of a person in the back seat of a luxurious car using a laptop."
                     src="/tranfers.jpeg"
-                    layout="fill"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className={styles["service-a-info"]}>
@@ -212,7 +221,8 @@ export default function Home() {
                   <Image
                     alt="Image of a conference."
                     src="/samuel-pereira-uf2nnANWa8Q-unsplash.jpg"
-                    layout="fill"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className={styles["service-a-info"]}>
@@ -226,15 +236,13 @@ export default function Home() {
       <img
         className={styles["company-card"]}
         alt="Image of a business card."
-        src="/card.jpeg"
+        src="/card.avif"
       ></img>
       <div className={styles["business-card"]}>
         <Link href="#home">
-
-            <FontAwesomeIcon icon={faArrowUp} size="1x" />
-
+          <FontAwesomeIcon icon={faArrowUp} size="1x" />
+          <p>BACK TO TOP</p>
         </Link>
-        <p>BACK TO TOP</p>
       </div>
       <Footer />
     </div>

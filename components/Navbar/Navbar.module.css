@@ -118,11 +118,21 @@
     font-weight: 900;
   }
 
+  .NavBar-Brand h2 {
+    margin: 0 0 0 1rem;
+  }
+
   .NavBar-Links a {
     font-size: 0.5rem;
   }
 
   .NavBar-Links-Contact a {
     font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 412px) { 
+  .NavBar-Brand h2 {
+    font-size: 1rem;
   }
 }
