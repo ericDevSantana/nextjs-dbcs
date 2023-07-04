@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div id="home" className={styles.container}>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
-      <Script
+      {/* <Script
         id="gtm-script"
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -30,7 +30,7 @@ export default function Home() {
             });
           `,
         }}
-      ></Script>
+      ></Script> */}
       <Head>
         <title>Dynamic Black Car Service</title>
         <meta
